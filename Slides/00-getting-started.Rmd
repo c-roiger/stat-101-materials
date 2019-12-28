@@ -10,6 +10,16 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+```{r echo = F}
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color, 
+      x)
+  } else x
+}
+```
 
 # Welcome to Stat 101
 
@@ -19,14 +29,69 @@ Information about your instructor:
 * Email: croiger@iastate.edu
 * Office: Snedecor 2418
 
-When sending emails about this course please include "STAT 101" in the email subject line then provide a succinct statement of your questions or concerns in the body of the email. I will try to get back to you as soon as possible. 
+
+For sending emails: please put the phrase "STAT 101" and your lab section at the start of every email subject line and include a brief statement of your question or concern. Then please provide more detail in the body of the email. I will try to get back to you shortly. 
 
 
+You can call me Charlotte, I'm a second year graduate student in Statistics! I have a degree in Mathematics from St. Olaf College in Minnesota. This is my first time teaching STAT 101 so this will be a learning process for both of us.
+
+---
+
+# I have a cat, his name is Angus
+
+```{r, out.width="50%", fig.keep="hold", fig.align='center',echo=FALSE}
+knitr::include_graphics("images/angus.jpg")
+```
+
+---
+# Syllabus Overview
 
 ---
 
-.center[
-<img src="../images/angus.jpg" width="80%" align="center" />
-]
+# Course Structure
 
 ---
+
+# Grading
+
+---
+
+# Homework Guidelines
+
+---
+
+# JMP Software
+
+---
+
+# Unit 1 Overview
+
+In general, Unit 1 explains how to talk about data! What that means:
+
+#### Chapter One: Introduction
+* Vocabulary
+
+#### Chapter Two: Categorical Variables
+* Data Visualization: Bar Charts, Pie Charts (unfortunately), mosaic plots
+* Data Description: Frequency Tables, Contingency Tables
+
+#### Chapter Three: Quantitative Variables
+* Data Visualization: Histograms, Stem-and-leaf plots
+* Data Description: mean, median, mode, standard deviation, IQR, range
+
+#### Chapter Four: Comparing Categorical and Quantitative Variables
+* Data Visualization: Box plots
+---
+
+# Unit 1 Overview Continued
+
+#### Chapter Six: Comparing two Quantitative Variables
+* Data Visualization: Scatterplots
+* Data Description: Association and Correlation
+
+#### Chapter Seven & Eight: Linear Regression
+
+
+
+
+
