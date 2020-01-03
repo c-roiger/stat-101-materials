@@ -3,6 +3,12 @@
 
 \usepackage[thmmarks,thref]{ntheorem}
 
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{exmp}{Example}[section]
+
 \theoremstyle{nonumberplain}
 \theoremheaderfont{\itshape}
 \theorembodyfont{\upshape}
@@ -111,10 +117,50 @@ Please read the syllabus, \textit{I am begging you}. For due dates please check 
 \item Online homework assessments must be submitted by 8 AM on the due date to receive credit for the assessment. Homework assessments will not be reopened for any reason.
 \end{itemize}
 
+\newpage
+
 \subsection*{Written Homework Guidelines}
 \begin{itemize}
-\item 
+\item Assignments must be turned in at the \textbf{beginning} of lecture on the due date or can be turned in early to the folder in my office at Snedecor Hall 2418.
+\item No late homework will be accepted! If you know that you will not be able to attend class, you can email me a pdf of the assignment \textbf{before} the lecture time on the due date. 
+\item All homework assignments are posted to Canvas and must be printed. Homework should be completed on the printed assignment sheets in the space provided.
+\item All homework assignments must be stapled. Do not use paperclips or
+binder clips, or tape, only staples.\textbf{ 5 points will be deducted for any homework assignment not stapled.}
+\item Write your Lab section at the top of the homework assignment by your name. 
 \end{itemize}
 
+\section*{Chapter One}
+
+In the most simplistic terms, our goal for this course is to learn how to describe, quantify, explain, and analyze data! There will be a fair amount of computation and mathematics in this course but at the end of the day this course is about \underline{\hspace{3cm}} and \underline{\hspace{3cm}}. But in order to facilitate our analysis we need to establish a common vocabulary between us to talk about data.
+
+\subsection*{Components of Data}
+
+\begin{itemize}
+\item \textbf{Obvservations or Cases:} \vskip 0.5in
+\item \textbf{Variables:} \vskip 0.5in
+\item \textbf{Data Inputs:} \vskip 0.5in
+\item \textbf{Data Table:}
+\end{itemize}
+
+\newpage
+
+\begin{exmp}
+Data were collected on 54,000 certified diamonds sold in the United
+States during the year of 2008. Data were collected by taking
+information from sales records in order to study the relationship between
+the ``4 Cs'' of diamonds and their prices.
+
+\begin{center}
+\includegraphics{../images/diamond-example.png}
+\end{center}
+
+Please highlight or label each component of the data table presented above.
+\end{exmp}
+
+Some takeaways from the example problem: 
+\begin{itemize}
+\item Notice how each individual row of the data table is a single observation or case of our collected data
+\item Similarly, each column represents a different variable under consideration in our example.
+\end{itemize}
 
 \end{document}
