@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx}
 
 \usepackage[thmmarks,thref]{ntheorem}
 
@@ -74,7 +74,47 @@ Please read the syllabus, \textit{I am begging you}. For due dates please check 
 \item 1 Final exam, closed book, approximately two hours
 \end{itemize}
 
+\subsection*{Grading}
 
+\begin{tabularx}{\textwidth} { 
+  | >{\raggedright\arraybackslash}X 
+  | >{\raggedleft\arraybackslash}X | }
+ \hline
+ Assessment Name & Grade Percentage \\
+ \hline
+ Exam One & 18\%  \\
+\hline
+ Exam Two & 9\% \\
+\hline
+ Exam Three & 18 \% \\
+ \hline
+ Final Exam & 18 \% \\
+ \hline
+ Labs & 6 \% \\
+ \hline
+ Online Homework & 10 \% \\
+ \hline
+ Written homework & 10 \% \\
+ \hline
+ Lecture Quizzes and Attendance & 5 \% \\
+ \hline
+ Vocab Quizzes & 6 \% \\
+ \hline
+\end{tabularx}
+
+\subsection*{Online Homework Guidelines}
+
+\begin{itemize}
+\item Online homework is submitted through Canvas
+\item Feel free to utilize your class notes, labs, fellow classmates, and TA for these assignments.
+\item You are only allowed one attempt at online homework assignments and there is no time limit. Be sure to save your progress as you complete your homework. 
+\item Online homework assessments must be submitted by 8 AM on the due date to receive credit for the assessment. Homework assessments will not be reopened for any reason.
+\end{itemize}
+
+\subsection*{Written Homework Guidelines}
+\begin{itemize}
+\item 
+\end{itemize}
 
 
 \end{document}

@@ -3,7 +3,7 @@ title: "Getting Started"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   xaringan::moon_reader:
-    css: ["default"]
+    css: [default, rladies, rladies-fonts]
     lib_dir: libs
     nature:
       highlightStyle: github
