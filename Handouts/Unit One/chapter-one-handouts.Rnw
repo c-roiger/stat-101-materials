@@ -163,4 +163,12 @@ Some takeaways from the example problem:
 \item Similarly, each column represents a different variable under consideration in our example.
 \end{itemize}
 
+\subsection*{The 5 Ws of Data}
+
+The main job of a statistician is to connect the analysis we learn from complex mathematical processes and our data to real-world conclusions. So context is incredibly important for talking about data. This context can be summarized as the 5 Ws of data:
+
+\subsubsection*{Who}
+
+
+
 \end{document}
