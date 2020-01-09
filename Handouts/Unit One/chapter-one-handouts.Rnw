@@ -147,7 +147,7 @@ In the most simplistic terms, our goal for this course is to learn how to descri
 \newpage
 
 \begin{example}
-At the beginning of the semester, STAT 101, students have been asked to complete a general survey to obtain information about demographic and other variables. ata were collected from the Spring 2004 through Spring 2007 semesters from 2,068 students.
+At the beginning of the semester, STAT 101, students have been asked to complete a general survey to obtain information about demographic and other variables. Data were collected from the Spring 2004 through Spring 2007 semesters from 2,068 students.
 
 \begin{center}
 \includegraphics{../images/student-example.png}
@@ -217,7 +217,7 @@ The what refers to characteristics of the ``who''. These are typically the colum
 
 \newpage
 
-The way a variable is used is also important for determining whether or note the variable in question is quantitative or categorical. Circle whether each variable is categorial or quantative given its usage. 
+The way a variable is used is also important for determining whether or not the variable in question is quantitative or categorical. Circle whether each variable is categorial or quantative given its usage. 
 
 \textbf{Variable: Education}
   \begin{itemize}
