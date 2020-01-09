@@ -66,6 +66,8 @@ Please read the syllabus, \textit{I am begging you}. For due dates please check 
 \item The final exam is cumulative with an emphasis on Unit Four Material
 \end{itemize}
 
+\section*{NO LAB THIS WEEK}
+
 \newpage
 
 \subsection*{Course Structure}
@@ -145,13 +147,10 @@ In the most simplistic terms, our goal for this course is to learn how to descri
 \newpage
 
 \begin{example}
-Data were collected on 54,000 certified diamonds sold in the United
-States during the year of 2008. Data were collected by taking
-information from sales records in order to study the relationship between
-the ``4 Cs'' of diamonds and their prices.
+At the beginning of the semester, STAT 101, students have been asked to complete a general survey to obtain information about demographic and other variables. ata were collected from the Spring 2004 through Spring 2007 semesters from 2,068 students.
 
 \begin{center}
-\includegraphics{../images/diamond-example.png}
+\includegraphics{../images/student-example.png}
 \end{center}
 
 Please highlight or label each component of the data table presented above.
@@ -232,5 +231,47 @@ The way a variable is used is also important for determining whether or note the
     \item Income as lower, middle, or upperclass: quantitative \hskip 4cm categorical
   \end{itemize}
 
+
+\subsubsection*{Where, When, How, and Why}
+
+This information is not necessarily found in the datatable, but provides additional context. 
+
+Questions to ask yourself about the data:
+
+\begin{itemize}
+  \item Where did this data come from?
+  \item When was this data collected? 
+  \item How was this data collected?
+  \item Why Was this data collected?
+\end{itemize}
+
+\begin{example}
+Data was collected on 54,000 certified diamonds sold in the United States during the year of 2008. Data were collected by taking information from sales records in order to study the relationship between "4Cs" of diamonds and their prices.
+  \begin{center}
+    \includegraphics{../images/diamond-example.png}
+  \end{center}
+\newpage
+
+\begin{tabularx}{\textwidth} { 
+  | >{\raggedright\arraybackslash}X 
+  | >{\raggedleft\arraybackslash}X | }
+ \hline
+ In General & In the context of our example \\
+ \hline
+ Who is the data collected on &   \\
+\hline
+ What information is collected on the who &  \\
+\hline
+ When was the data collected &  \\
+ \hline
+ Where was the data collected &  \\
+ \hline
+ Why was the data collected & \\
+ \hline
+ How was the data collected &  \\
+ \hline
+\end{tabularx}
+
+\end{example}
 
 \end{document}
