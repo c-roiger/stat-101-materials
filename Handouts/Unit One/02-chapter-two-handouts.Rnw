@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Two}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter 2: Displaying and Describing One Categorical Variable}
+
+
+Recall from Chapter One that categorical variables are variables that take on \underline{\hspace{3cm}} as \underline{\hspace{3cm}}. 
+
+There are three main ways we extract information about categorical variables:
+
+\begin{itemize}
+  \item \textbf{Counts(frequencies)}: \vskip 1in
+  \item \textbf{Proportions}: \vskip 1in
+  \item \textbf{Percentages}: \vskip 1in
+\end{itemize}
+
+When we encounter a categorical variable in \textit{the wild}, it is often useful to 
+\begin{enumerate}
+  \item ~\\
+  \item ~\\\\\\
+
+\end{enumerate}
+
+This process is known as describing the  \underline{\hspace{3cm}} of the categorical variable. We can summarize the distribution of a single categorical variable by using data visualizations: 
+\begin{enumerate}
+  \item Frequency/Relative Frequency Table
+  \item Bar Chart
+  \item Pie Chart \frownie{}
+\end{enumerate}
+\newpage
+
+\subsection*{Frequency Table/Relative Frequency Table}
+
+\subsection*{Bar Chart}
+\textbf{Important Characteristics}
+
+\begin{itemize}
+  \item Order of bars does not matter
+  \item There are spaces between the bars
+  \item Do not need to have all categories displayed
+  \item does not necessarily show the shape of the distribution
+\end{itemize}
+
+\subsection*{Pie Chart \frownie{}}
+
+\textbf{Important Characteristics }
+
+\end{document}

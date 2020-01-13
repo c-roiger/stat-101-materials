@@ -97,7 +97,7 @@
 
 
 % Question 3
-\pointproblem{2} Tell me about yourself! I'd love to get to know ya. What's your major, what's your favorite colour, etc. \vspace{1.5in}
+\pointproblem{2} Tell me about yourself! I'd love to get to know ya. What's your major, etc. \vspace{1.5in}
 	
 
 
@@ -107,6 +107,6 @@
 
 
 % Question 5
-\pointproblem{2} Draw a picture of a pineapple. 
+\pointproblem{2} What is your favorite colour. 
 
 \end{document}			
