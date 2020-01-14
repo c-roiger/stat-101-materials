@@ -36,7 +36,7 @@
 \chead{STAT 101 - Chapter Two}
 \rhead{Page \thepage\ of \pageref{LastPage}}
 
-\section*{Chapter 2: Displaying and Describing One Categorical Variable}
+\section*{Chapter Two Part One: Displaying and Describing One Categorical Variable}
 
 
 Recall from Chapter One that categorical variables are variables that take on \underline{\hspace{3cm}} as \underline{\hspace{3cm}}. 
@@ -66,9 +66,34 @@ This process is known as describing the  \underline{\hspace{3cm}} of the categor
 
 \subsection*{Frequency Table/Relative Frequency Table}
 
+\textbf{Frequency Table}: \vskip 1in
+\textbf{Relative Frequency Table}: \vskip 1in
+
+\textbf{Example}
+
+Here is the distribution of favourite colours for this STAT 101 class! Overwhelmingly blue is a favourite colour. 
+
+\begin{table}[ht!]
+\begin{tabular}{|l|c|r|}
+\hline
+Favourite Colours & Frequency & Relative Frequency \\ \hline
+Red               & 7         & 0.0778             \\
+Orange            & 4         & 0.0444             \\
+Yellow            & 10        & 0.111              \\
+Green             & 16        & 0.178              \\
+Blue              & 29        & 0.322              \\
+Purple            & 9         & 0.100              \\
+Pink              & 8         & 0.0889             \\
+Brown             & 1         & 0.0111             \\
+Grey              & 4         & 0.0444             \\
+Black             & 2         & 0.0222             \\
+\hline
+\end{tabular}
+\end{table}
+
+
 \subsection*{Bar Chart}
 \textbf{Important Characteristics}
-
 \begin{itemize}
   \item Order of bars does not matter
   \item There are spaces between the bars
@@ -76,8 +101,161 @@ This process is known as describing the  \underline{\hspace{3cm}} of the categor
   \item does not necessarily show the shape of the distribution
 \end{itemize}
 
+\newpage
+
+\begin{center}
+\includegraphics{../images/fav-colour.png}
+\end{center}
+
 \subsection*{Pie Chart \frownie{}}
 
 \textbf{Important Characteristics }
+\begin{itemize}
+\item Compare the size of the pie slices
+\item Often can provide percentages on the pie chart
+\item Percentages always add up to 100
+\end{itemize}
 
+\begin{center}
+\includegraphics{../images/pie-chart.png}
+\end{center}
+\newpage
+
+\textbf{Problems}
+\begin{itemize}
+\item Only limited number of categories can really be captured
+\item Sometimes colours are hard to discern
+\item Not a super convincing datavisualization method
+\end{itemize}
+
+\begin{center}
+\includegraphics{../images/bad-pie.png}
+\end{center}
+
+\section*{Chapter Two Part Two: Describing a Relationship between Two Categorical Variables}
+
+\subsection*{Response vs. Explanatory Variables}
+
+Often we are interested in studying how one variable can impact another variable. We call the variable of interest the \underline{\hspace{4cm}}. We call the variable being used to "explain" the differences in the distribution of the response variable the \underline{\hspace{4cm}}.
+
+\begin{example}
+Suppose we ask a random survey of Americans the following questions:
+  \begin{itemize}
+    \item What political party are you a member of?
+    \item Who did you vote for in the last presidential election?
+  \end{itemize}
+  What might the response and explanatory variable be in this case?
+\end{example}
+\newpage
+
+When our explanatory variable and response variable are both \underline{\hspace{4cm}}, we describe their relationship in terms of an \underline{\hspace{4cm}}.
+
+\begin{itemize}
+  \item \textbf{Association:} \vskip 1in
+  \item \textbf{Independence:} \vskip 1in
+\end{itemize}
+
+\begin{example}
+Suppose we take a simple random sample of 100 eligible voters and ask them their political party and who they voted for. Based on the following frequency and table do you think there is an association between these two variables? (Hint: calculate relative frequencies to get a better idea.)
+
+\begin{table}[ht!]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Political Party & Candidate A & Candidate B & Count \\ \hline
+Democrats       & 44          & 6           & 50    \\
+Republicans     & 19          & 31          & 50    \\ \hline
+Count           & 63          & 37         & 100   \\
+\hline
+\end{tabular}
+\end{table}
+
+Would there still be an association if equal proportions of Democrats and Republicans voted for Candidate A over Candidate B?
+
+\end{example}
+
+\subsection*{Displaying Two Categorical Variables}
+
+There are two main ways we can display the relationship between two categorical variables:
+
+\begin{itemize}
+  \item Contingency Tables
+  \item Mosaic Plots
+\end{itemize}
+
+\subsubsection*{Contingency Tables}
+
+A contingency table is the cross-classification of observations according to the categories of two categorical variables.
+\newpage
+
+A contingency table is built in the following way:
+
+\begin{enumerate}
+  \item 
+  \item
+  \item
+\end{enumerate}
+\vskip 0.5in
+
+\begin{example}
+Below is a contingency table of 2068 students from STAT 101. 
+  \begin{center}
+  \includegraphics{../images/contingency-table.png}
+  \end{center}
+  
+What proportion of students have blue eyes?
+
+What proportion of students have blue or brown eyes?
+
+What proportion of students have brown eyes and are female?
+
+What percentage of female students have brown eyes?
+
+\end{example}
+
+\textbf{Marginal Distributions}
+
+A \underline{\hspace{4cm}} looks at counts or proportions for each variable separately and ignores the other variable. 
+
+\begin{center}
+  \includegraphics{../images/contingency-table.png}
+\end{center}
+
+Notice how the marginal distribution for Eye Colour is in the \underline{\hspace{4cm}} of the table.
+\newpage
+
+\textbf{Conditional Distribution}
+
+A \underline{\hspace{4cm}} looks at the counts or proportions for one variable contingent upon (conditioned on, given) a particular category of another variable. So for example, what might the distribution of eye colours look like, given that we are only interested in female students?
+
+\begin{center}
+  \includegraphics{../images/contingency-table.png}
+\end{center}
+
+\subsubsection*{Mosaic Plots}
+
+A mosaic plot is pretty much the same thing as a segmented bar plot. It visualizes the conditional distribution of the data and a summary of the marginal distribution. The \underline{\hspace{4cm}} display the \underline{\hspace{4cm}} of the variable on the vertical axis, conditioned on the value of the variable on the horizontal axis. 
+
+\begin{center}
+  \includegraphics{../images/mosaic-example.png}
+\end{center}
+
+Differences in conditional distributions can indicate an association so Mosaic plots are great for establishing association.
+\newpage
+
+\begin{itemize}
+  \item \textbf{Association:} \vskip 1in
+  \item \textbf{No Association:} \vskip 1in
+\end{itemize}
+
+Do you think there is an association between eye colour and sex based on the mosaic plot above?
+
+\textbf{Chapter Two Summary}
+
+\begin{enumerate}
+  \item Ways of extracting information from categorical variables (frequency tables)
+  \item Displaying Categorial Variables (bar charts, pie charts \frownie{})
+  \item Response vs. Explanatory variables
+  \item Displaying Two Categorical Variables (contingency tables, mosaic plots)
+\end{enumerate}
 \end{document}
