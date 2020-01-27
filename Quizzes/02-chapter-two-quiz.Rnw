@@ -1,0 +1,119 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[lmargin=1in,rmargin=1in,tmargin=1in,bmargin=1in]{geometry}
+
+% -------------------
+% Packages
+% -------------------
+\usepackage{
+	amsmath,			% Math Environments
+	amssymb,			% Extended Symbols
+	enumerate,		    % Enumerate Environments
+	graphicx,			% Include Images
+	lastpage,			% Reference Lastpage
+	multicol,			% Use Multi-columns
+	multirow			% Use Multi-rows
+}
+
+
+% -------------------
+% Font
+% -------------------
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+
+% -------------------
+% Heading Commands
+% -------------------
+\newcommand{\class}{Stat 101}
+\newcommand{\term}{Spring 2020}
+\newcommand{\head}[2]{%
+\thispagestyle{empty}
+\vspace*{-0.5in}
+\noindent\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+	\textbf{#1} & \textbf{Name:} & \makebox[8cm]{\hrulefill} \\
+	\textbf{#2} & & \\
+	\textbf{\class:\; \term} & & \\
+\end{tabular*} \\
+\rule[2ex]{\textwidth}{2pt} %
+}
+
+
+% -------------------
+% Commands
+% -------------------
+\newcommand{\prob}{\noindent\textbf{Problem. }}
+\newcounter{problem}
+\newcommand{\problem}{
+	\stepcounter{problem}%
+	\noindent \textbf{Problem \theproblem. }%
+}
+\newcommand{\pointproblem}[1]{
+	\stepcounter{problem}%
+	\noindent \textbf{Problem \theproblem.} (#1 points)\,%
+}
+\newcommand{\pspace}{\par\vspace{\baselineskip}}
+\newcommand{\ds}{\displaystyle}
+
+
+% -------------------
+% Header & Footer
+% -------------------
+\usepackage{fancyhdr}
+
+\fancypagestyle{pages}{
+	%Headers
+	\fancyhead[L]{}
+	\fancyhead[C]{}
+	\fancyhead[R]{}
+\renewcommand{\headrulewidth}{0pt}
+	%Footers
+	\fancyfoot[L]{}
+	\fancyfoot[C]{}
+	\fancyfoot[R]{}
+\renewcommand{\footrulewidth}{0.0pt}
+}
+\headheight=0pt
+\footskip=14pt
+
+\pagestyle{pages}
+
+
+% -------------------
+% Content
+% -------------------
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\head{Quiz 2}{Date: \today}
+\textbf{Instructions:} \par \noindent Please answer the questions below. Show all your work. Calculators are allowed, please simplify all answers to three significant figures. \pspace
+
+
+\pointproblem{5} Consider the contingency table below. Here we are examining an association between higher education level and divorce rates. 
+\begin{table}[ht!]
+\centering
+\begin{tabular}{|l|lll}
+\hline
+             & \multicolumn{1}{l|}{No}    & \multicolumn{1}{l|}{Yes}   & \multicolumn{1}{l|}{Total} \\ \hline
+Some College & 1,012                      & 988                        & 2,000                      \\ \cline{1-1}
+Bachelors    & 2,427                      & 1,573                      & 4,000                      \\ \cline{1-1}
+Masters      & 948                        & 552                        & 1,500                      \\ \cline{1-1}
+Phd          & 390                        & 110                        & 500                        \\ \hline
+Total        & \multicolumn{1}{l|}{4,777} & \multicolumn{1}{l|}{3,223} & \multicolumn{1}{l|}{8,000} \\ \hline
+\end{tabular}
+\end{table}
+\begin{enumerate}
+  \item[a)] Draw the marginal distribution of Education level. \vskip 1in
+  \item[b)] Draw the conditional distribution of divorce rates, given we are interested in individuals with Masters degrees. Compare the marginal(from a) and conditional distribution. \vskip 2in
+  \item[c)] What is the proportion of individuals who have not gotten divorced and have either a bachelors degree or a PhD. \vskip 1in 
+  
+\end{enumerate}
+
+\newpage
+\pointproblem{4} From the given data, draw both a histogram and a stem-and-leaf-plot. 
+\begin{center}
+  20, 20, 20, 20, 21, 21, 21, 24, 24, 24, 25, 26, 27, 30, 30, 30, 31, 31, 31, 34, 34, 34, 44, 44, 46, 46, 51, 52, 59, 61, 62, 79
+\end{center}
+\vskip 5in
+\pointproblem{1} How is the pace of the class so far?
+
+\end{document}

@@ -1,0 +1,220 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Three}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter Three Part Two: Numeric Summaries and Measures of Center and Spread}
+
+Continuing on our discussion about quantitative variables, I mentioned last class that \\ \underline{\hspace{10cm}}. We call such mathematical calculations,  \underline{\hspace{6cm}}.
+
+We will divide our discussion of summary statistics into two categories:
+\begin{enumerate}
+  \item ~\\
+  \item ~\\
+\end{enumerate}
+
+\subsection*{Measures of Center}
+
+Measures of center are said to locate the  \underline{\hspace{10cm}}. When looking for measures of center we ask ourselves: Where is the typical value located in this distribution? There are two measures of center that we will consider.
+\begin{enumerate}
+  \item ~\\ 
+  \item ~\\
+\end{enumerate}
+
+\subsubsection*{Median}
+
+The  \underline{\hspace{6cm}} is the value with exactly half of the data values above it, and half the data values below it. It is the  \underline{\hspace{6cm}}.
+To find the median we follow the following procedure:
+\begin{enumerate}
+  \item ~\\\\
+  \item ~\\
+  \item ~\\\\
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+\end{enumerate}
+
+In otherwords, when the sample size (n) is an odd number, the median is the $\frac{n+1}{2}$ number in the ordered list of observations.
+
+\begin{example}
+  If n = 11, what is the location of median in this dataset? \vskip 1in
+\end{example}
+
+\begin{example}
+  Let's consider the homerun records of professional base-ball player Hank Aaron. The data is shown below, please find the median number of homeruns for Hank Aaron. In this case, Hank Aaron played for 23 years, so the sample size is 23.
+  \begin{center}
+    \includegraphics[width = 3in]{../images/hank-aaron-example.png}
+  \end{center}
+\end{example}
+\newpage
+
+When the sample size (n) is even, the $\frac{(n+1)}{2}$ place in the list is inbetween two numbers. 
+
+\begin{example}
+  If n = 10, what is the location of the median? \vskip 1in
+\end{example}
+
+\begin{example}
+  Now let's consider the baseball career of Barry Bonds, he played a total of 22 years. Find the median number of homeruns in Barry Bonds' career.
+  \begin{center}
+    \includegraphics[width = 3in]{../images/barry-bonds-example.png}
+  \end{center}
+\end{example}
+
+\textbf{Note:} It is important to note that the median is a measure of center that is \\ \underline{\hspace{10cm}}. We will discuss more on this topic later.
+
+\subsubsection*{Mean}
+
+The mean is the \underline{\hspace{6cm}} of all the data values in a distribution. We often refer to the mean using the mathematical notation \underline{\hspace{6cm}}. To calculate the mean we follow a familiar process:
+\begin{enumerate}
+  \item ~\\
+  \item ~\\
+  \item~\\\\
+\end{enumerate}
+
+\begin{example}
+  Using the previous data for Hank Aarons and Barry Bonds, calculate the mean number of homeruns for each player. \vskip 2in
+\end{example}
+
+\textbf{Note:} Unlike the median, the mean is \underline{\hspace{10cm}}. The reason for this is if we have an extremely high value in our dataset, it will artificially pull the mean higher than we would normally expect.
+
+\subsection*{Measures of Spread}
+
+Other than learning where the most common numerical response is, it is often useful to know how spread out our data is. For example, data that is very tightly clustered around one point may be indicative of some relationship whereas data that is extremely spread out may give us less information. There are three major measures of spread that we will discuss today:
+
+\begin{enumerate}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{enumerate}
+
+\subsubsection*{Range}
+
+The range is the difference between the \underline{\hspace{4cm}} and \underline{\hspace{4cm}} values in the  dataset. To find the range we do the following: \vskip 2in
+
+\begin{example}
+Using the same data from the Barry Bonds example, find the range of the dataset.
+
+\begin{center}
+  \includegraphics{../images/barry-bonds-ordered.png}
+\end{center}
+\vskip 1in
+\end{example}
+
+One thing to note is that when we add observations that change the maximum or the minimum of the dataset, the range \underline{\hspace{6cm}}. This means that the range is also \underline{\hspace{6cm}}.
+
+\subsubsection*{Inter-Quartile Range}
+
+Before we can talk about the Inter-Quartile Range we need to establish a few other concepts. The first of which is \underline{\hspace{6cm}}. The $k^{th}$ percentile is the value that $k\%$ of the data is below. 
+
+\begin{example}
+What does it mean if a student obtains a score in the 60th percentile on an exam? \vskip 1in
+\end{example}
+
+\begin{example}
+How would you find the 50th percentile? \vskip 1in
+\end{example}
+
+To calculate the IQR we need to know how to calculate \underline{\hspace{6cm}}. Quartiles divide the data into four equally sized groups, where each group contains 25\% of the data. 
+\begin{enumerate}
+  \item \textbf{First Quartile(Q1):} ~\\\\
+  \item \textbf{Second Quartile(Q2):} ~\\\\
+  \item \textbf{Third Quartile(Q3):} ~\\\\
+\end{enumerate}
+
+\begin{example}
+Once again, let's return to the Barry Bonds example. Calculate the Q1 and Q3 quartile of this dataset.
+
+\begin{center}
+  \includegraphics{../images/barry-bonds-ordered.png} \vskip 3in
+\end{center}
+\end{example}
+
+Finally, we can define the IQR. The IQR or the inter-quartile range refers to the difference between the first and third quartiles. It measures the \underline{\hspace{7cm}}. To caclulate the IQR: \vskip 1in
+
+\begin{example}
+Using your answer to the previous example, calculate the IQR for Barry Bonds' home run records.  \vskip 1in
+\end{example}
+
+
+\textbf{Note:} One thing that is beneficial about using the IQR, is that it largely ignores extreme values. 
+\newpage
+In summary:
+\begin{itemize}
+  \item \textbf{Range:} ~\\\\
+  \item \textbf{IQR: } ~\\\\
+\end{itemize}
+
+\textbf{Note:} When the median is reported as a measure of center, we often also report the \underline{\hspace{6cm}} and the \underline{\hspace{6cm}}. This often takes the form of the Five Number Summary.
+
+\subsubsection*{Five Number Summary}
+The five number summary summarizes the distribution of a quantitative variable. The five number summary includes:
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+\subsubsection*{Standard Deviation}
+
+The last measure of spread we will discuss today is the \underline{\hspace{6cm}}. This measures the \underline{\hspace{6cm}} between each observation and the sample mean. We refer to the standard deviation from a sample using the notation $s$. (Sometime you may see it referred to as $\sigma$ when it comes from a population). To calculate the standard deviation we use the following formula.
+
+\begin{center}
+$s = \sqrt{\frac{\sum_{i=1}^{n} (y_{i} - \bar{y})^2}{n-1}}$
+\end{center}
+\newpage
+More simply put, we follow the following steps:
+\begin{enumerate}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\ 
+  \item ~\\
+\end{enumerate}
+
+To calculate the variance, we simply \underline{\hspace{6cm}} the standard deviation. 
+
+\begin{example}
+ Calculate the standard deviation and the variance of the following dataset: 11,5, 6, 6, 7. \vskip 2in
+\end{example}
+
+We interpret the standard deviation as the \underline{\hspace{9cm}}. Note that the standard deviation can \underline{\hspace{6cm}} be less than zero. If the standard deviation is equal to zero then, \underline{\hspace{6cm}}. If we have two samples of the same size and one has a higher standard deviation than the other one. We can say that that distribution has a larger \underline{\hspace{6cm}} from the mean. 
+
+Since the standard deviation relies on the sample mean, then standard deviation is \\ \underline{\hspace{10cm}}.
+\end{document}

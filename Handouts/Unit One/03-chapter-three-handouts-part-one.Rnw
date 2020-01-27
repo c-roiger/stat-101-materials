@@ -1,0 +1,279 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Three}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter Three Part One: Data Visualization and the Shape of Distributions}
+
+\textbf{Remember}, a \underline{\hspace{6cm}} is a variable that is measured on a numeric scale. 
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+When trying to glean information from quantitative variables there are two things we look at:
+\begin{enumerate}
+  \item ~\\
+  \item ~\\
+\end{enumerate}
+
+\subsection*{Data Visualization - Histograms}
+
+While a histogram looks similar to a bar plot, they mean different things. A histogram is a graphical display of the \underline{\hspace{6cm}} of a quantitative variable. This is a summary of quantitative information it does not \underline{\hspace{7.5cm}} \underline{\hspace{6cm}}.
+
+\begin{center}
+  \includegraphics{../images/histogram-components.png}
+\end{center}
+
+\newpage
+
+To build a histogram, we perform the following actions:
+\begin{enumerate}
+  \item ~\\
+  \item ~\\ 
+  \item ~\\
+  \item ~\\
+  \item ~ \\\\
+\end{enumerate}
+
+\begin{example}
+The dataset USStates contains information about the 50 states in the US. A porption of the data is shown below:
+\begin{center}
+  \includegraphics{../images/usstates-example.png}
+\end{center}
+\begin{enumerate}
+  \item Create bins. \vskip0.5in
+  \item Count the number of cases in each bin.
+  \newpage
+  \item Create the Histogram.\vskip 4in
+\end{enumerate}
+\end{example}
+
+\textbf{Be careful with how you choose your bins!}
+\begin{center}
+\includegraphics[width = \textwidth]{../images/bad-hist.png}
+\end{center}
+\newpage
+
+\begin{example}
+Below is a histogram of the tips(in dollars) received by a server at a restaurant in one week. 
+
+\begin{center}
+  \includegraphics[width = 4in]{../images/hist-problem-one.png}
+\end{center}
+The fourth largest bin has a count of 11. This indicates: 
+\begin{enumerate}
+  \item[(a)] There were 11 seven dollar tips.
+  \item[(b)] There were 11 tips between six to eight dollars.
+  \item[(c)] There were 11 eight dollar tips.
+  \item[(d)] There were 11 six dollar tips.
+\end{enumerate}
+\end{example}
+
+\begin{example}
+
+A histogram for the number of states in the U.S. visited by a random sample of 100 STAT 101 students is given below:
+  \begin{center}
+    \includegraphics[width = 3in]{../images/hist-problem-two.png}
+  \end{center}
+Choose the best description of the vertical axis in this image.
+  \begin{enumerate}
+  \item[(a)] The number of states
+  \item[(b)] The mean number of states in each bin
+  \item[(c)] The number of students
+  \item[(d)] The mean number of students in each bin
+  
+  \end{enumerate}
+\end{example}
+\newpage
+
+\begin{example}
+Below is a histogram for arrival delays of flights for an airline.
+\begin{center}
+  \includegraphics[width = 3in]{../images/hist-problem-three.png}
+\end{center}
+How many flights were delayed between 10 and 20 minutes?
+  \begin{enumerate}
+    \item[(a)] 12
+    \item[(b)] 5
+    \item[(c)] 18
+    \item[(d)] 10
+  \end{enumerate}
+\end{example}
+
+
+\begin{example}
+Students at another university completed an in class survey. Consider the following variables and select the one you think is displayed in the histogram below:
+\begin{center}
+  \includegraphics[width = 3in]{../images/hist-problem-four.png}
+\end{center}
+\begin{enumerate}
+  \item[(a)] Hours of sleep on a typical weeknight
+  \item[(b)] Monetary amount in dollars of carried coins
+  \item[(c)] Randomly selected integer between 0 and 9
+  \item[(d)] Height in inches
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\subsection*{Stem-and-Leaf Plot}
+A stem-and-leaf plot is another way of displaying the distribution of a \underline{\hspace{4cm}}.
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+\end{itemize}
+
+To build a stem-and-leaf plot we:
+\begin{enumerate}
+  \item ~\\
+  \item ~\\\\
+  \item ~\\\\\\
+  \item ~\\
+\end{enumerate}
+
+\textbf{Note:} JMP orders stems in increasing order from bottom to top (backwards from usual)
+
+\newpage
+\begin{example}
+Suppose we have data of the weight filled soda cans in grams. 
+  \begin{center}
+  \includegraphics{../images/soda-example-stem.png}
+  \end{center}
+  Create a stem-and-leaf plot from the data given. \vskip 4in
+\end{example}
+
+Here is an example of a stem-and-leaf plot in JMP. 
+
+\begin{center}
+  \includegraphics[width = 2in]{../images/stem-plot-jmp.png}
+\end{center}
+
+\newpage
+What we notice from the JMP plot:
+
+\begin{itemize}
+  \item JMP puts things in a non-intuitive order
+  \item Key at the bottom of the plot
+  \item Manageable amount of cases, but generally, \underline{\hspace{7cm}}
+\end{itemize}
+
+\subsection*{Describing the Shape of a Distribution}
+
+There are three main attributes that we use to discuss the shape of a distribution, especially when we are describing \underline{\hspace{7cm}}.
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+The acronym I use to remember these three attributes is \textbf{M}i\textbf{SO} soup! 
+
+\subsubsection*{Modes}
+
+Modes refer to the "humps" in the histogram, or rather where \underline{\hspace{6cm}}. We refer to the specific number of "humps" in our distribution using the following names:
+\begin{itemize}
+  \item \textbf{Uniform:}
+  \item \textbf{Unimodal:}
+  \item \textbf{Bimodal:} 
+  \item \textbf{Multimodal:}
+\end{itemize}
+
+Let's draw a uniform, unimodal, and bimodal distribution. 
+\newpage
+
+\subsubsection*{Symmetry}
+
+The symmetry of a distribution refers to whether both sides of a distribution are roughly equal or symmetric. For example, if the plot were to be folded in half, the distribution would cover itself up. 
+\begin{example}
+Example of symmetric and non-symmetric distributions \vskip 3in
+\end{example}
+
+Another aspect of symmetry is whether or not the distribution is \underline{\hspace{6cm}}.
+\begin{itemize}
+  \item \textbf{Skewed Right:}
+  \item \textbf{Skewed Left:}
+\end{itemize}
+\begin{example}
+Example of right and left skewed distributions 
+\end{example}
+
+\newpage
+
+\subsubsection*{Outliers}
+
+Outliers are extreme values present in our distribution that differentiate themselves from the rest of the distribution. Typically found in the \underline{\hspace{6cm}} of the distribution. Understanding and making note of outliers is important for three key reasons:
+
+\begin{itemize}
+  \item Can occasionally be informative or indicative of some sort of error
+  \item Impact the statistical methods we employ when analyzing data
+  \item Can dramatically impact results
+\end{itemize}
+
+To look for outliers on a histogram we look for \underline{\hspace{6cm}}.
+\begin{center}
+  \includegraphics[width = 3in]{../images/outlier-example.png}
+\end{center}
+
+\begin{example}
+Describe the shape of the distribution:
+\begin{center}
+  \includegraphics[width = 3in]{../images/hist-shape-example-one.png}
+\end{center}
+
+\newpage
+
+\begin{example}
+Describe the shape of the distribution:
+\begin{center}
+  \includegraphics[width = 3in]{../images/hist-shape-example-two.png}
+\end{center}
+\end{example}
+
+\begin{example}
+Describe the shape of the distribution:
+\begin{center}
+  \includegraphics[width = 3in]{../images/hist-shape-example-three.png}
+\end{center}
+\end{example}
+
+
+\end{example}
+\end{document}

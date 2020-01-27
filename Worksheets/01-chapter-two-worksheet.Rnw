@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Two Worksheet}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+Below is a contingency table of Minneapolisc Police Department Stops for the year 2017. Data was collected from Police reports that year and has 43,638 observations. 
+
+\begin{table}[ht!]
+\centering
+\begin{tabular}{|l|ll|l|}
+\hline
+        & \multicolumn{1}{l|}{No} & \multicolumn{1}{l|}{Yes} & \multicolumn{1}{l|}{Total} \\ \hline
+Women   & 9,202                   & 813                      & 10,015                     \\ \cline{1-1}
+Men     & 22,771                  & 4,360                    & 27,131                     \\ \cline{1-1}
+Unknown & 6,434                   & 58                       & 6,492                      \\ \cline{1-1} \hline
+Total   & 38,407                  & 5,231                    & 43,638                     \\ \hline
+\end{tabular}
+\end{table}
+
+On the vertical axis is gender of the person stopped by Minneapolis Police. On the Horizontal axis is whether or not the person stopped was searched. Based on the information above, answer the following questions
+
+\begin{enumerate}
+  \item What is the "Who" of the data? \vskip 0.5in
+  \begin{enumerate}
+    \item What is the population of this study: \\
+    \item What is the sample of this study: \\
+    
+  \end{enumerate}
+  
+  \item Identify the "what" of this dataset. \vskip 0.5in
+  \item What proportion of "Males" are searched. \\
+  \item What proportion of "Females" are searched. \\
+  \item Draw the marginal distribution of searches. \vskip 0.5in
+  \item Draw the marginal distribution of gender. \vskip 0.5in
+  \item What is the proportion of those who were searched given that they are not identified as "Female" or "Male". \vskip 0.5in
+  
+\end{enumerate}
+\newpage
+For this part of the worksheet assignment please refer to canvas for data posted under Chapter 2 Lecture Materials. We will be utilizing jmp for this portion of the in-class worksheet. 
+
+\begin{enumerate}
+  \item For each of the variable descriptions below, write down whether each variable is categorical or quantitative.
+  \begin{itemize}
+    \item \textbf{winter:} Whether a plant may be left outside in the winter
+    \item \textbf{shadow:} Whether the plant needs to stand in the shadows
+    \item \textbf{tubers:} Distinguishes plants from tubers
+    \item \textbf{colour:} Specifies a plants colour (1= white, 2= yellow, 3 = pink, 4 = red, 5 = blue)
+    \item \textbf{soil:} Indicates whether the plant grows in dry(1), normal(2), or wet(3) soil
+    \item \textbf{preference:} Someone's preference ranking from 1 to 18
+    \item \textbf{height:} The plant's height in centimeters
+    \item \textbf{distance:} The distance in centimeters that should be left between plants.
+  \end{itemize}
+  
+  \item Load the "flowers" data from Canvas into jmp by opening jmp and selecting "open" under the "Data Table" portion of the jmp start menu. For one of the categorical variables identified above, create a bar plot for this categorical variable by clicking "Analyze" and selecting "Distribution". In the section that says "Y" input your categorical variable of choice. Draw a picture of your barplot below and include the different categories of your categorical variable. 
+  \newpage
+  
+  \item Create a mosaic plot in jmp for the variables "winter" and "shadow". To do this, select the "Graph" option and select "Graph Builder". At the top of the graph builder you will see a bunch of images of different types of graphs. Select the one four spaces from the right. This is the mosaic plot. Please have "winter" as the explanatory variable and "shadow" as the response. Draw the mosaic plot below. Is there an association? Why? \vskip 3in
+  \item Now in Graph Builder, build a new graph of one categorical variable and one quantitative variable. Select the option titled "box plot". Please have the categorical variable as the explanatory variable and the quantitative variable as the response. Draw below.
+  \newpage
+  \item Provide the mean, standard deviation, min, and max for the two quantitative variables in this dataset. 
+\end{enumerate}
+
+
+
+\end{document}

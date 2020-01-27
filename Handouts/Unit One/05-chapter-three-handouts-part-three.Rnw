@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Three}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter Three Part Three: Deciding which Numerical Summaries to Use}
+
+\subsection*{Review}
+
+Remember last class period we talked about different types of summary statistics:
+
+\textbf{Measures of Center}
+\begin{itemize}
+  \item \textbf{Mean:} ~\\\\\\
+  \item \textbf{Median:} ~\\\\\\
+\end{itemize}
+
+\textbf{Measures of Spread}
+\begin{itemize}
+  \item \textbf{Range:} ~\\\\\\
+  \item \textbf{IQR:} ~\\\\\\
+  \item \textbf{Standard Deviation} ~\\\\\\
+\end{itemize}
+
+We call summary statistics NOT affected by outliers \underline{\hspace{8cm}}.
+\textbf{Measures of Center}
+\begin{itemize}
+  \item \textbf{Mean:} 
+  \item \textbf{Median:} 
+\end{itemize}
+
+\textbf{Measures of Spread}
+\begin{itemize}
+  \item \textbf{Range:}
+  \item \textbf{IQR:} 
+  \item \textbf{Standard Deviation} 
+\end{itemize}
+
+\newpage
+
+\begin{example}
+\textbf{Situation One}
+  Consider a small town with six families. Calculate the mean and median family income from these numbers: 
+  \begin{center}
+    \textdollar 25,000 \  \textdollar 27,000 \  \textdollar 29,000 \  \textdollar 35,000 \   \textdollar 37,000 \  \textdollar 38,000 
+  \end{center}
+  \vskip 1in
+  
+  \textbf{Situation Two}
+    What if a particularly wealthy family moves to town:
+    \begin{center}
+    \textdollar 25,000 \  \textdollar 27,000 \  \textdollar 29,000 \  \textdollar 35,000 \   \textdollar 37,000 \  \textdollar 38,000 \ \textdollar 100,000,000
+  \end{center}
+  Now calculate the mean and median.
+\end{example}
+\vskip 1in
+
+\subsection*{Mean versus Median}
+
+Like the previous example establishes, extreme values or values found in the tails of a distribution can influence the mean but not typically the median. Often times data such as:
+
+\begin{itemize}
+  \item 
+  \item
+  \item 
+\end{itemize}
+
+Are highly skewed and you should be skeptical if only the mean is reported! 
+
+We note that means and medians are generally \textbf{similar} when:
+\begin{itemize}
+  \item
+  \item
+\end{itemize}
+
+Means and medians are generally \textbf{different} when: 
+\begin{itemize}
+  \item
+  \item
+\end{itemize}
+
+\newpage
+\begin{center}
+  \includegraphics{../images/skew-example.png}
+\end{center}
+
+So in summary, reporting the median is appropriate when the distribution is \underline{\hspace{4cm}} and \underline{\hspace{6cm}}. Reporting the mean is appropriate when the distribution is \underline{\hspace{10cm}}. So we can basically break down the summary statistics we've learned about into two groups. 
+
+\textbf{Robust}
+\begin{itemize}
+  \item 
+  \item
+  \item
+\end{itemize}
+
+\textbf{Not Robust}
+\begin{itemize}
+  \item
+  \item
+\end{itemize}
+
+These should be reported together! However the first step to determining which group to use is to always get a picture of your data! 
+
+Report the \textbf{5 Number Summary} when the data is:
+\begin{itemize}
+  \item
+  \item
+\end{itemize}
+
+Report the \textbf{Mean and Standard Deviation} when the data is: 
+\begin{itemize}
+  \item
+  \item 
+\end{itemize}
+\end{document}
