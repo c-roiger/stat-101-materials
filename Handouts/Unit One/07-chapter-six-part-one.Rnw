@@ -1,0 +1,207 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Six}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter Six: Scatterplots, Association, and Correlation}
+
+\subsection*{Review: Explanatory and Response Variables}
+
+So remember from previous discussions, when we are looking at a relationship between two variables we assign them the roles of  \underline{\hspace{5cm}} and  \underline{\hspace{4cm}} variable. In Chapter Four we looked at  a relationship between a categorical variable and a quantitative variable. Now in chapter six, we will look at the relationship between two  \underline{\hspace{5cm}} variables.
+
+For two quantitative variables we:
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+So now, let's take a moment to run through some examples. Label which variable is the explanatory variable and which variable is the response in the following scenarios.
+
+\begin{enumerate}
+  \item ACT composite score and freshman GPA
+  \begin{itemize}
+    \item Explanatory Variable:
+    \item Response Variable:
+  \end{itemize}
+  \item Physical Response times and sleep deprivation
+  \begin{itemize}
+    \item Explanatory Variable:
+    \item Response Variable:
+  \end{itemize}
+  \item Height of Corn stalk and fertilizer type
+  \begin{itemize}
+    \item Explanatory Variable:
+    \item Response Variable:
+  \end{itemize}
+  \item Number of cigarettes smoked per day and life expectancy
+  \begin{itemize}
+    \item Explanatory Variable:
+    \item Response Variable:
+  \end{itemize}
+  \item Number of headaches and number of glasses of water consumed
+  \begin{itemize}
+    \item Explanatory Variable:
+    \item Response Variable:
+  \end{itemize}
+  \item Hours of sleep at night and dollars spent on coffee
+  \begin{itemize}
+    \item Explanatory Variable:
+    \item Response Variable:
+  \end{itemize}
+\end{enumerate}
+
+\subsection*{Scatterplots}
+
+A \underline{\hspace{5cm}} is used to display the relationship between two quantitative variables. The explanatory variable is put on the \underline{\hspace{5cm}} and the response variable is on the \underline{\hspace{5cm}}.
+
+\begin{example}
+Suppose we have data on 15 different vehicle models from 2007. For this example, we are interested in studying horsepower and gas mileage. 
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width = 3in]{../images/scatter-plot-engine-example-one.png}
+\end{figure}
+\end{example}
+
+To interpret this scatterplot, we consider the form, strength, direction/association, and outliers. 
+
+\textbf{Form}
+
+\begin{itemize}
+  \item ~\\\\\\
+  \item ~\\\\\\
+  \item ~\\
+\end{itemize}
+\newpage
+\textbf{Strength}
+\begin{itemize}
+  \item ~\\\\\\
+  \item ~\\\\\\
+  \item ~\\\\\\
+\end{itemize}
+
+\textbf{Direction/Association}
+\begin{itemize}
+  \item ~\\\\\\
+  \item ~\\\\\\
+\end{itemize}
+
+\textbf{Outliers}
+\begin{itemize}
+  \item ~\\\\\\
+  \item ~\\\\\\
+  \item ~\\\\\\
+\end{itemize}
+\newpage
+So let's return to our example:
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width = 3in]{../images/scatter-plot-engine-example-one.png}
+\end{figure}
+
+How would you describe this scatterplot using the categories we just discussed?
+\vskip 2in
+
+\begin{example}
+
+The Happy Planet Index was a presentation given by Nic Marks in a
+2010 TED talk. One of the key points of the talk was that we should be
+measuring the well-being of the people in countries, rather than
+measuring economic information on the countries. One variable that
+captures the well-being of people is called the Happiness variable.
+According to the Happy Planet Index: 2012 Report, 'The Happy Planet
+Index (HPI) is an efficiency measure which captures the degree to which
+long and happy lives are achieved per unit of environmental impact.'
+Large values of the Happiness variable indicate greater happiness, health,
+and well-being of the country's citizens. What are the 5 Ws of this dataset?
+\end{example}
+
+\newpage
+
+What is the explanatory variable and what is the response variable? \vskip 2in
+What kind of relationship do you think exists between these two variables? \vskip 2in
+Describe the form, strength, and direction of the scatterplote provided. Are there any outliers? Any points that deviate from that form?
+
+\begin{figure}[ht!]
+  \includegraphics[width = 3in]{../images/happy-planet-example-two.png}
+\end{figure}
+
+\newpage
+For the following scatterplots, answer these two questions:
+\begin{enumerate}
+  \item What is the explanatory variable
+  \item What is the response variable
+  \item Describe the form, strength, and direction of the scatterplote provided. Are there any outliers?
+  \item Any points that deviate from that form?
+\end{enumerate}
+
+\begin{example}
+~\\
+\begin{figure}[ht!]
+  \includegraphics[width = 3in]{../images/scatterplot-example-three.png}
+\end{figure}
+\end{example}
+
+\begin{example}
+~\\
+\begin{figure}[ht!]
+  \includegraphics[width = 3in]{../images/scatterplot-example-four.png}
+\end{figure}
+\end{example}
+\newpage
+
+\begin{example}
+~\\
+\begin{figure}[ht!]
+  \includegraphics[width = 3in]{../images/scatterplot-example-five.png}
+\end{figure}
+\end{example}
+
+\begin{example}
+~\\
+\begin{figure}[ht!]
+  \includegraphics[width = 3in]{../images/scatterplot-example-six.png}
+\end{figure}
+\end{example}
+
+\begin{example}
+~\\
+\begin{figure}[ht!]
+  \includegraphics[width = 3in]{../images/scatterplot-example-seven.png}
+\end{figure}
+Notice how this is the same data as the previous example, just the outlier is removed
+\end{example}
+
+\end{document}

@@ -1,0 +1,192 @@
+\documentclass[12pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+\usepackage{soul}
+\usepackage{amsmath}
+\usepackage{subfigure,amsmath,latexsym,amssymb, framed}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{boldline}
+\usepackage[bottom]{footmisc}
+\usepackage{multirow}
+%\setlist{nolistsep}
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\newenvironment{myindentpar}[1]%
+  {\begin{list}{}%
+          {\setlength{\leftmargin}{#1}}%
+          \item[]%
+  }
+  {\end{list}}
+
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+\newcommand{\prob}{\noindent\textbf{Problem. }}
+\newcounter{problem}
+\newcommand{\problem}{
+	\stepcounter{problem}%
+	\noindent \textbf{Problem \theproblem. }%
+}
+
+\newcommand{\pointproblem}[1]{
+	\stepcounter{problem}%
+	\noindent \textbf{Problem \theproblem.} (#1 points)\,%
+}
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\newcommand\NoIndent[1]{%
+  \par\vbox{\parbox[t]{\linewidth}{#1}}%
+}
+\usepackage{array}
+\usepackage{booktabs}
+\setlength{\heavyrulewidth}{1.5pt}
+\setlength{\abovetopsep}{4pt}
+\usepackage{tabularx}
+
+
+%\usepackage{apalike}
+\usepackage{epsfig,natbib}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\textwidth}{7.1in}
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9in}
+%% change bullets and stuff %%
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$\triangleright$}
+\renewcommand{\labelitemiv}{$\diamond$}
+%% add header %%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{
+\normalfont \normalsize
+\textsc{Iowa State University} \\
+\horrule{0.5pt} \\
+\huge \textsc{STAT 101 Exam \#1 Form C}\\[-10pt]
+\horrule{2pt} \\
+\horrule{0pt}\\
+\horrule{0pt}
+}
+
+\author{\textsc{Name (print)}: \rule{0.55\textwidth}{0.5pt} \textsc{Section:}}
+\date{}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\date{\vspace{-5ex}}
+\maketitle
+
+\vspace{7mm}
+
+\begin{center}
+{\Large \textsc{February 24th, 2020}}
+\end{center}
+
+\vspace{7mm}
+
+\begin{center} \Large \textsc{Instructions} \end{center}
+\vspace{2mm}
+You have 50 minutes to complete this exam. There are a total of 63 points to earn on the exam along with 2 bonus points.  Read the questions carefully and completely and give complete answers to all questions. Partial credit will be given where it is deserved.
+\flushleft You are allowed to use only a pencil and a calculator to complete this exam. All necessary information will be provided in the question space. A formula sheet is attached at the back.
+\flushleft \textbf{Show your work.} Draw pictures, write formulas and equations, and don't forget units where needed. \textbf{Good luck!}
+\newpage
+
+\pointproblem{2} Which of the following are quantitative variables? Circle all correct answers. 
+  \begin{enumerate}
+    \item[a)] Education in number of years
+    \item[b)] Age in years
+    \item[c)] Highest level of education achieved
+    \item[d)] Pizza preference
+    \item[e)] Income in terms of Socio-economic class
+  \end{enumerate}
+
+\pointproblem{2} Which of the following are categorical variables? Circle all correct answers. 
+  \begin{enumerate}
+    \item[a)] Test Scores
+    \item[b)] Eye Colour
+    \item[c)] Height
+    \item[d)] Political Party Identification
+    \item[e)] Distance in miles
+  \end{enumerate}
+
+\pointproblem{2} What type of variable can be used in mathematical calculations?
+  \begin{enumerate}
+    \item[a)] Categorical Variables
+    \item[b)] Response Variables
+    \item[c)] Ordinal Variables
+    \item[d)] Lurking Variables
+    \item[e)] Quantitative Variables
+  \end{enumerate}
+  
+\pointproblem{2} Which type of data visualization is good for comparing a quantitative variable across different categories?
+  \begin{enumerate}
+    \item[a)] Pie Chart
+    \item[b)] Histograms
+    \item[c)] Box Plots
+    \item[d)] Stem-and-Leaf Plot
+    \item[e)] Mosaic Plot
+  \end{enumerate}
+\newpage
+
+\pointproblem{2} What is it called when a summary statistic is not easily effected by outliers.
+  \begin{enumerate}
+    \item[a)] Static
+    \item[b)] Outlier
+    \item[c)] Robust
+    \item[d)] Not Robust
+    \item[e)] Skewed
+  \end{enumerate}
+  
+\pointproblem{2} What is it called when data accumulates around smaller values and trails off towards larger values in a histogram?
+  \begin{enumerate}
+    \item[a)] Symmetric
+    \item[b)] Left-Skewed
+    \item[c)] Harmonic
+    \item[d)] Right-Skewed
+    \item[e)] Uniform
+  \end{enumerate}
+
+\pointproblem{2} If the mean is greater than the median for a dataset visualized as a histogram, how would you describe the symmetry of the histogram?
+  \begin{enumerate} 
+    \item[a)] Right-Skewed
+    \item[b)] Left-Skewed
+    \item[c)] Unimodal
+    \item[d)] Symmetric
+    \item[e)] Outliers Present
+  \end{enumerate}
+  
+\pointproblem{2} The marginal distribution is found in which part of the contingency table?
+  \begin{enumerate}
+    \item[a)] Columns
+    \item[b)] Rows
+    \item[c)] The interior of the table
+    \item[d)] The margins of the table
+    \item[e)] The marginal distribution is not found in a contingency table
+  \end{enumerate}
+\newpage
+
+\pointproblem{3} Label the following components of the box plot below. If it is unclear where you are placing the label on the box plot, no credit will be given.
+
+\begin{enumerate}
+  \item[a)] Outlier
+  \item[b)] Q1
+  \item[c)] Median
+  \item[d)] Smallest observation less than Q3 + 1.5*IQR
+  \item[e)] 75th percentile
+\end{enumerate}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics{images/generic_boxplot_A.png}
+\end{figure}
+\end{document}
