@@ -1,0 +1,124 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[lmargin=1in,rmargin=1in,tmargin=1in,bmargin=1in]{geometry}
+
+% -------------------
+% Packages
+% -------------------
+\usepackage{
+	amsmath,			% Math Environments
+	amssymb,			% Extended Symbols
+	enumerate,		    % Enumerate Environments
+	graphicx,			% Include Images
+	lastpage,			% Reference Lastpage
+	multicol,			% Use Multi-columns
+	multirow			% Use Multi-rows
+}
+
+
+% -------------------
+% Font
+% -------------------
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+
+% -------------------
+% Heading Commands
+% -------------------
+\newcommand{\class}{Stat 101}
+\newcommand{\term}{Spring 2020}
+\newcommand{\head}[2]{%
+\thispagestyle{empty}
+\vspace*{-0.5in}
+\noindent\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+	\textbf{#1} & \textbf{Name:} & \makebox[8cm]{\hrulefill} \\
+	\textbf{#2} & & \\
+	\textbf{\class:\; \term} & & \\
+\end{tabular*} \\
+\rule[2ex]{\textwidth}{2pt} %
+}
+
+
+% -------------------
+% Commands
+% -------------------
+\newcommand{\prob}{\noindent\textbf{Problem. }}
+\newcounter{problem}
+\newcommand{\problem}{
+	\stepcounter{problem}%
+	\noindent \textbf{Problem \theproblem. }%
+}
+\newcommand{\pointproblem}[1]{
+	\stepcounter{problem}%
+	\noindent \textbf{Problem \theproblem.} (#1 points)\,%
+}
+\newcommand{\pspace}{\par\vspace{\baselineskip}}
+\newcommand{\ds}{\displaystyle}
+
+
+% -------------------
+% Header & Footer
+% -------------------
+\usepackage{fancyhdr}
+
+\fancypagestyle{pages}{
+	%Headers
+	\fancyhead[L]{}
+	\fancyhead[C]{}
+	\fancyhead[R]{}
+\renewcommand{\headrulewidth}{0pt}
+	%Footers
+	\fancyfoot[L]{}
+	\fancyfoot[C]{}
+	\fancyfoot[R]{}
+\renewcommand{\footrulewidth}{0.0pt}
+}
+\headheight=0pt
+\footskip=14pt
+
+\pagestyle{pages}
+
+
+% -------------------
+% Content
+% -------------------
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\head{Quiz 4}{Date: \today}
+\textbf{Instructions:} \par \noindent Please answer the questions below. Show all your work. Calculators are allowed, please simplify all answers to three significant figures. \pspace
+
+Suppose we are interested in studying the relationship between species, petal width( in cm), and petal length( in cm) for three different species of irises. In this case our explanatory variable will be the petal width of each species, and the the response variable will be the petal length.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width = 3.5in]{../Handouts/images/quiz-four-petal-scatterplot.png}
+\end{figure}
+
+\pointproblem{3} Describe the above scatterplot in terms of Form, Strength, Direction, and Outliers. \vskip 1in
+
+\pointproblem{2} Based on the above cursory information, is a linear model appropriate for this data?
+
+\newpage
+
+\pointproblem{5} Based on the summary statistics below, calculate the line of the regression equation for this data. State the regression equation and interpret the slope and intercept of the regression equation in context. 
+\[ \hat{y} = b_{o} + b_{1}*x \quad \quad b_{o} = \bar{y} -b_{1}*\bar{x} \quad \quad b_{1} = r\frac{s_y}{s_x}\]
+\begin{table}[ht!]
+\centering
+\begin{tabular}{|l|r|}
+\hline
+\textbf{Summary Statistic}      & \multicolumn{1}{l|}{\textbf{Estimate}} \\ \hline
+Mean of Petal Width             & 1.199                                  \\ \hline
+Standard Deviation Petal Width  & 0.75                                   \\ \hline
+Mean Petal Length               & 3.758                                  \\ \hline
+Standard Deviation Petal Length & 1.765                                  \\ \hline
+Correlation                     & 0.9628                                 \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+
+\end{document}
