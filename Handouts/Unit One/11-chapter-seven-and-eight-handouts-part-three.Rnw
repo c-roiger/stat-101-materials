@@ -1,0 +1,218 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym, hyperref, scalerel, stackengine}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage[thmmarks,thref]{ntheorem}
+
+\stackMath
+\newcommand\reallywidehat[1]{%
+\savestack{\tmpbox}{\stretchto{%
+  \scaleto{%
+    \scalerel*[\widthof{\ensuremath{#1}}]{\kern-.6pt\bigwedge\kern-.6pt}%
+    {\rule[-\textheight/2]{1ex}{\textheight}}%WIDTH-LIMITED BIG WEDGE
+  }{\textheight}% 
+}{0.5ex}}%
+\stackon[1pt]{#1}{\tmpbox}%
+}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Seven and Eight}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter 7 and 8: Linear Model Appropriateness and Diagnostics}
+
+\subsection*{Review}
+
+A \underline{\hspace{7cm}} is the difference between the observed value and the predicted value of the response variable based on linear regression. Recall that:
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+Overall, residuals give us a general idea of how well our linear regression fits our data. This brings us to the topic of \textbf{Linear Model Appropriateness}.
+When determining the appropriateness of our linear models, it is useful to ask ourselves the following questions:
+
+\begin{enumerate}
+  \item ~\\
+    \begin{itemize}
+      \item ~\\\\
+    \end{itemize}
+  \item ~\\
+    \begin{itemize}
+      \item ~\\
+      \item ~\\
+    \end{itemize}
+\end{enumerate}
+
+The best way we can answer these questions is by looking at \underline{\hspace{6cm}}
+
+\newpage
+\subsection*{Residual Plots}
+
+The goal of a residual plot is to determine if a linear model is appropriate for a relationship between two quantitative variables.
+
+A residual plot is basically a scatterplot with:
+
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics{../images/residual-plot-first-example.png}
+\end{figure}
+
+\subsubsection*{Interpretation}
+
+When we encounter a residual plot we look for the four following characteristics:
+
+\begin{enumerate}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{enumerate}
+\newpage
+
+\begin{example}
+Based on this residual plot we would say this residual plot falls under situation one. Meaning, there is \underline{\hspace{9cm}}.
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics{../images/residual-plot-situation-one.png}
+  \end{figure}
+
+This means a linear model \underline{\hspace{11cm}}
+\end{example}
+
+\begin{example}
+Based on this residual plot we would say this residual plot falls under situation Two. Meaning, there is \underline{\hspace{9cm}}.
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics{../images/residual-plot-situation-two.png}
+  \end{figure}
+
+This means a linear model \underline{\hspace{11cm}} but caution is needed to continue with analysis since there may be problems with non-constant variance. To learn more, take some higher level stats courses for how to deal with this problem! 
+
+\end{example}
+
+\newpage
+
+\begin{example}
+Based on this residual plot we would say this residual plot falls under situation Three. Meaning, there is \underline{\hspace{9cm}}.
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics{../images/residual-plot-situation-three.png}
+  \end{figure}
+
+This means a linear model \underline{\hspace{11cm}} but there are some special steps we need to take to deal with outliers. 
+\end{example}
+
+\begin{example}
+Based on this residual plot we would say this residual plot falls under situation four. Meaning, there is \underline{\hspace{9cm}}.
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics{../images/residual-plot-situation-four.png}
+  \end{figure}
+
+This means a linear model \underline{\hspace{11cm}}
+\end{example}
+\newpage
+
+For the following scatterplots, label with each with a "Yes" a "Yes, but" or a "No" for whether each situation is appropriate for a linear model. Then determine which of the four situations the data falls under.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width = 3in]{../images/residual-plot-exercise-one.png}
+\end{figure}
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width = 3in]{../images/residual-plot-exercise-two.png}
+\end{figure}
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width = 3in]{../images/residual-plot-exercise-three.png}
+\end{figure}
+\newpage
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width = 3in]{../images/residual-plot-exercise-four.png}
+\end{figure}
+
+\subsection*{Introduction to $R^2$}
+
+Now that we have covered a method for determining whether a linear model is appropriate, it might also be useful to find out just how much of the variability in our data can be accounted for by our model. First, let's review sources of variability:
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics{../images/sources-of-variability.png}
+\end{figure}
+
+When we compare $s_{\hat{y}}^2$ to $s_{y}^2$ we can draw two main conclusions:
+
+\begin{itemize}
+  \item ~\\\\
+  \item ~\\\\
+\end{itemize}
+
+To measure the closeness of $s_{\hat{y}}^2$ and $s_{y}^2$ we use the coefficient of determination known as $R^2$. The coefficient of determination quantifies the variation in the response variable, y, that can be explained by the linear regression model with explanatory variable, x.
+
+To calculate $R^2$ we use the following equivalencies
+\begin{align*}
+R^2 &= \frac{s_{\hat{y}}}{s_{y}} \\
+&= (r)^2 \\
+&= (correlation)^2
+\end{align*}
+
+\textbf{Interpretation}: \vskip 2in
+
+\textbf{Properties:} 
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\\\
+  \item ~\\\\
+  \item ~\\\\
+  \item ~\\\\
+\end{itemize}
+
+
+
+
+
+\end{document}
