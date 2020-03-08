@@ -72,7 +72,7 @@
 \normalfont \normalsize
 \textsc{Iowa State University} \\
 \horrule{0.5pt} \\
-\huge \textsc{STAT 101 Exam \#1 Form A}\\[-10pt]
+\huge \textsc{STAT 101 Exam \#1 Form B}\\[-10pt]
 \horrule{2pt} \\
 \horrule{0pt}\\
 \horrule{0pt}
@@ -103,23 +103,23 @@ You have 50 minutes to complete this exam. There are a total of 65 points to ear
 
 \pointproblem{2} Which of the following are quantitative variables? Circle all correct answers. 
   \begin{enumerate}
-    \item[a)] Education in number of years
-    \item[b)] Age in years
+    \item[a)] Breeds of Cats 
+    \item[b)] Income in terms of Socio-economic class
     \item[c)] Highest level of education achieved
-    \item[d)] Pizza preference
-    \item[e)] Income in terms of Socio-economic class
+    \item[d)] Spiciness of pepper in scolvilles units
+    \item[e)] Weight of birds in ounces
   \end{enumerate}
 
 \pointproblem{2} Which of the following are categorical variables? Circle all correct answers. 
   \begin{enumerate}
-    \item[a)] Test Scores
-    \item[b)] Eye Colour
-    \item[c)] Height
-    \item[d)] Political Party Identification
-    \item[e)] Distance in miles
+    \item[a)] Miles per Gallon
+    \item[b)] Height
+    \item[c)] Types of cake
+    \item[d)] Level of education measured in years
+    \item[e)] Race or Ethnicity
   \end{enumerate}
 
-\pointproblem{2} What type of variable can be used in mathematical calculations?
+\pointproblem{2} What type of variable has labels for values?
   \begin{enumerate}
     \item[a)] Categorical Variables
     \item[b)] Response Variables
@@ -128,7 +128,7 @@ You have 50 minutes to complete this exam. There are a total of 65 points to ear
     \item[e)] Quantitative Variables
   \end{enumerate}
   
-\pointproblem{2} Which type of data visualization is good for comparing a quantitative variable across different categories?
+\pointproblem{2} Which type of data visualization is good for comparing two categorical variables? 
   \begin{enumerate}
     \item[a)] Pie Chart
     \item[b)] Histograms
@@ -147,13 +147,13 @@ You have 50 minutes to complete this exam. There are a total of 65 points to ear
     \item[e)] Skewed
   \end{enumerate}
   
-\pointproblem{2} What is it called when data accumulates around smaller values and trails off towards larger values in a histogram?
+\pointproblem{2} What is it called when an outlier decreases the Coefficient of Determination, or makes the linear model less accurate? ( Circle all that apply)
   \begin{enumerate}
-    \item[a)] Symmetric
-    \item[b)] Left-Skewed
-    \item[c)] Harmonic
-    \item[d)] Right-Skewed
-    \item[e)] Uniform
+    \item[a)] High Residual
+    \item[b)] Low Leverage
+    \item[c)] High Leverage
+    \item[d)] Influential 
+    \item[e)] Non-Influential
   \end{enumerate}
 
 \pointproblem{2} If the mean is greater than the median for a dataset visualized as a histogram, how would you describe the symmetry of the histogram?
@@ -165,43 +165,14 @@ You have 50 minutes to complete this exam. There are a total of 65 points to ear
     \item[e)] Outliers Present
   \end{enumerate}
   
-\pointproblem{2} The marginal distribution is found in which part of the contingency table?
-  \begin{enumerate}
-    \item[a)] Columns
-    \item[b)] Rows
-    \item[c)] The interior of the table
-    \item[d)] The margins of the table
-    \item[e)] The marginal distribution is not found in a contingency table
-  \end{enumerate}
-\newpage
-
-\pointproblem{3} Label the following components of the box plot below. If it is unclear where you are placing the label on the box plot, no credit will be given.
-
+\pointproblem{2} If we were to view a residual plot and detect a megaphone pattern in the residuals, would a linear model be appropriate and why or why not?
 \begin{enumerate}
-  \item[a)] Outlier
-  \item[b)] Q1
-  \item[c)] Median
-  \item[d)] Smallest observation less than Q3 + 1.5*IQR
-  \item[e)] 75th percentile
+  \item[a)] No, non-constant variance is an issue
+  \item[b)] No, non-linear pattern detected
+  \item[c)] Yes, but caution is needed, constant non-constant variance is an issue
+  \item[d)] Yes, but caution is needed, outliers may be influential
+  \item[e)] Yes, no caution needed
 \end{enumerate}
-
-\begin{figure}[ht!]
-  \centering
-  \includegraphics{images/generic_boxplot_A.png}
-\end{figure}
-
-\pointproblem{3} Which of the following measures of center and spread are affected by outliers.
-\begin{center}
-\textbf{I.} Mean \quad \textbf{II.} Median \quad \textbf{III.} Range \quad \textbf{IV.} IQR \quad \textbf{V.} Standard Deviation
-\end{center}
-\begin{enumerate}
-  \item[a)] I. \& II.
-  \item[b)] II., III., and IV.
-  \item[c)] I., V., and IV.
-  \item[d)] All of them.
-  \item[e)] None of them.
-\end{enumerate}
-
 \newpage
 
 \pointproblem{8} Match each statistical concept to its mathematical symbol. Each symbol is only used once
@@ -221,13 +192,12 @@ You have 50 minutes to complete this exam. There are a total of 65 points to ear
   \item[h)] Y-intercept of Linear Regression \underline{\hspace{3cm}}
 \end{enumerate} \vskip 0.5in
 
-Use the following histogram to answer questions 12 and 13.
+Use the following histogram to answer questions 10 and 11.
 
 \begin{figure}[ht!]
   \centering
-  \includegraphics{images/sample-histogram-form-A.png}
+  \includegraphics[width = 3in]{images/sample-histogram-form-b.png}
 \end{figure}
-\newpage
 \pointproblem{3} Describe the shape of this distribution. \vskip 2in
 \pointproblem{1} Which measure of spread is most appropriate for this data.
 \begin{enumerate}
@@ -236,26 +206,27 @@ Use the following histogram to answer questions 12 and 13.
   \item[c)] IQR
 \end{enumerate}
 
-\pointproblem{11} \textbf{Flight Etiquette:} A study commissioned by FiveThirtyEight about flying etiquette. Data was collected in 2014 as a survey of 1,040 respondents. In particular we are interested in whether it is considered rude to recline your seat on a flight and how often participants due in fact recline their seats. Use the data table and mosaic plot provided to answer the following questions. 
+\pointproblem{15} \textbf{Pet Adoption} In March 2016, data was released by a humane society about pet adoptions and adoption outcomes. Data was collected from 26,729 animal outcomes, and information was recorded including adoption outcome, age at adoption, animal type, colour, and name. Use the data table and the mosaic plot provided to answer the following questions.
 
 \begin{figure}[ht!]
   \centering
-  \includegraphics{images/rude-to-recline-table.png}
+  \includegraphics{images/frequency-table-form-b.png}
 \end{figure}
 
 \begin{enumerate}
   \item[a)] (1 points) Identify the Who of the dataset. \vskip 1in
   \item[b)] (1 points) Identify the What of the dataset.\vskip 1in
-  \item[c)] (1 point) What is the explanatory variable? \vskip 1in
-  \item[d)] (2 points) What is the proportion of people who think it is somewhat rude to recline and recline more than once in a while? \vskip 1.5in
-  \item[e)] (2 points) Give the conditional distribution ``How often do you recline?" given that we are only interested in responses from people who do not think it is rude.\vskip 1.5in
-  \item[f)] (3 points) Give the marginal distribution of ``How often do you recline?". Compare this distribution to the distribution in (e) \vskip 1in
-  
+  \item[c)] (1 point) In the above table, what is the explanatory variable? \vskip 1in
+  \item[d)] (2 points) What proportion of young or baby animals are adopted? \vskip 1.5in
+  \item[e)] (2 points) Give the conditional distribution Animal Outcomes given that we are only interested in adult animals.\vskip 1.5in
+  \item[f)] (3 points) Give the marginal distribution of Animal Outcomes. Compare this distribution to the distribution in (e) \vskip 1in
+
 \begin{figure}[ht!]
   \centering
-  \includegraphics[width = 7in]{images/rude-to-recline-mosaic.png}
+  \includegraphics[width = 7in]{images/mosaic-plot-form-b.png}
 \end{figure}
-  \item[g)] (1 points) Based on the mosaic plot given, is there an association between thinking reclining on an airplane is rude and the frequency at which you recline your seat? \vskip 1in
+
+\item[g)] (1 points) Based on the mosaic plot given, is there an association between anial type and adoption outcome? \vskip 1in
 \end{enumerate}
 
 \pointproblem{20} Data was extracted from the 1974 Motor Trend US magazine and comprisesfuel consumpation and 10 aspects of automobile design and performance for 32 different types of automobiles. Suppose we are interested in studying the relationship between weight (in thousands of pounds) and mpg( miles per gallon).
@@ -303,6 +274,7 @@ Use the following histogram to answer questions 12 and 13.
 \[r = \pm\sqrt{R^2}\]
 \vspace{5mm}
 \[r = \frac{1}{n-1}\frac{\sum(x_i-\bar{x})(y_i - \bar{y})}{s_xs_y}\]
+
 
 
 \end{document}

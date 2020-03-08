@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Ten}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter Ten: Survey Sampling}
+
+Recall, last lecture we talked about the importance of random sampling and the various types of sampling schemas covered in this class. However, sampling is not a perfect process, there are things in sampling that can negatively impact results.
+
+\subsection*{Bias}
+
+Sampling methods that either over or under-emphasize some characteristics of a population are known as \underline{\hspace{7cm}}. 
+
+\textbf{Problems with Methods of Sampling}
+\begin{itemize}
+  \item ~\\
+    \begin{itemize}
+      \item ~\\\\\\
+      \item ~\\
+    \end{itemize}
+  \item ~\\
+    \begin{itemize}
+      \item ~\\
+      \item ~\\
+      \item ~\\
+    \end{itemize}
+\end{itemize}
+
+\textbf{Problems with Random Sampling}
+
+Even if our sampling method is chosen to reduce bias, we can still have issues with random sampling.
+
+\begin{itemize}
+  \item ~\\
+    \begin{itemize}
+      \item ~\\
+      \item ~\\
+    \end{itemize}
+  \item ~\\
+    \begin{itemize}
+      \item ~\\\\
+    \end{itemize}
+  \item ~\\
+    \begin{itemize}
+      \item ~\\
+      \item ~\\
+      \item ~\\
+      \item ~\\
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Big Idea Three: Sample Size Matters}
+
+Recall that we denote the sample size of our study as $n$. When we are conducting research we must ask ourselves: How many people should we sample?
+
+Generally speaking, \underline{\hspace{13cm}}. 
+
+\begin{itemize}
+  \item ~\\ 
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+\subsubsection*{Summary of Chapter Ten}
+
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\\\
+  \item ~\\
+  \item ~\\\\
+\end{itemize}
+
+\begin{example}
+  For each of the sampling situations, specify the type of bias found if any.
+  
+  \begin{itemize}
+    \item Not telling the truth to appease the interviewer
+    \item Asking participants to fill out a survey via Facebook
+    \item Phone Surveys
+    \item Leading Questions (questions phrased to suggest a correct answer)
+    \item Asking about presidential approval only in liberal states.
+  \end{itemize}
+\end{example}
+
+
+
+\end{document}

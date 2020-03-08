@@ -1,0 +1,199 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Ten}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter Ten: Sample Surveys}
+
+Recall way back from chapters one and two the difference between a population and a sample. A \underline{\hspace{7cm}} is the entire body of possible experimental units or observations of interest. So for example, the U.S Census is a study based on an entire population. A \underline{\hspace{7cm}} is a smaller subset of our population of interest. So if I were to randomly select twenty STAT 101 students, that would be a sample. It's no secret that conducting studies on populations is incredibly difficult. So to combat this issue in statistics we often perform \underline{\hspace{7cm}} on \underline{\hspace{7cm}} instead. However, it is difficult to collect samples or surveys and there is a lot we need to consider:
+
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+
+\subsection*{Three Big Ideas About Sampling}
+\begin{enumerate}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{enumerate}
+
+\subsubsection*{Big Idea One: Take a Sample}
+
+\textbf{Population}
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+\textbf{Sample}
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+    \item ~\\\\
+    \item ~\\
+    
+  \end{itemize}
+  
+\begin{example} 
+  To estimate the proportion of American college students who support changing the drinking age from 21 to 18, a random sample of 100 college students are asked the question ``Would you support a measure to lower the drinking age form 21 to 18?"
+  
+  \textbf{Population}: \\
+  \textbf{Sample}:
+\end{example}
+
+\begin{example}
+A strawberry farmer wants to estimate the average number of strawberries per plant in her field. She randomly chooses 25 plants and counts the number of strawberries on each plant.
+\textbf{Population}: \\
+\textbf{Sample}:
+\end{example}
+
+\begin{example}
+A fishing boat captain examines one days catch of fish in a new location to see if the average weight of fish in that area is large enough to make fishing there profitable.
+\textbf{Population}: \\
+\textbf{Sample}:
+\end{example}
+
+\subsubsection*{Parameters and Statistics}
+
+Like we covered before in our mathematical symbol review, we use different symbols for mathematical calculations if they are from our sample versus the population. We call summary statistics collected from populations our \underline{\hspace{7cm}} and those collected from samples, \underline{\hspace{7cm}}.
+
+\textbf{Parameters}
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+\textbf{Statistics}
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize} \vskip 4in
+
+
+\subsubsection*{Big Idea Two: Select the Sample Randomly}
+
+Selecting a \underline{\hspace{7cm}} sample leads to beneficial properties:
+\begin{itemize}
+  \item ~\\\\
+  \item ~\\\\
+  \item ~\\\\
+\end{itemize}
+
+There are four different types of random sampling that we will cover in this course: 
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+\textbf{Simple Random Sample}
+
+A  \underline{\hspace{8cm}} or SRS is a selection scheme where every combination of possible sample members has an equal chance of being selected for the sample.
+
+Procedure:
+
+\begin{enumerate}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{enumerate}
+
+Suppose we are interested in learning the different breeds of dogs at the dog park. There are way too many dogs for us to count them all. So let's take an SRS.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width = 4in]{../images/srs-example.png}
+\end{figure}
+
+\newpage
+To take an SRS, we would label each dog that we encounter at the dog park, then use a random number generator to generate n random numbers. In this case n is the \underline{\hspace{4cm}}. 
+
+\textbf{Stratified Random Sample}
+
+Often large populations will be made up of smaller homogenous groups. So it is in our best interest to reduce bias by making sure each group is represented in our sample. For a population which can be divided into strata, a stratified random
+sample is a sample which is obtained by taking a collection of random samples from each strata.
+
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+Back to our dog example, if we want to make sure each breed is represented in our sample, we would take a stratified random sample.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width = 4in]{../images/stratified-example.png}
+\end{figure}
+
+In this case we number each member of each strata, then randomly generate n numbers in each strata to select individuals.
+
+\textbf{Cluster Sampling}
+
+\begin{enumerate}
+  \item ~\\
+  \item ~\\ 
+  \item ~\\
+\end{enumerate}
+
+Cluster sampling is another form of sampling that is easier for population samplingsince we only need to sample a few clusters. I often like to think of this sort of sampling as a spatial sampling. An example would be if we want a student survey of freshmen at ISU. We would consider each dorm to be a cluster and we could randomly select n clusters for our survey. 
+
+\newpage
+
+\textbf{Multi-Stage Sampling}
+This sort of sampling is a complicated combination of SRS, Stratified, and Cluster sampling. Returning to our freshman survey, suppose we select three dorms (clustering) for our sample. Then in each of the three dorms we randomly select to floors (stratified) to deliver the survey. Then on each of these selected floors we randomly select students living on these floors to take the survey (SRS). 
+
+\textbf{Systematic Sampling}
+A systematic sampling schema is where a sample is drawn from a population in a systematic fashion.
+
+A systematic sampling schema can be representative if:
+\begin{itemize}
+  \item ~\\\\
+  \item ~\\\\
+\end{itemize}
+
+So if we were to do a systematic sampling schema for our college freshman survey. We might get a list of all of the freshmen at ISU, then randomly start at a point on the list, then select every student 100 spots after the randomly selected starting point and so on. 
+\end{document}

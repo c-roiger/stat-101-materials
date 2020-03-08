@@ -1,0 +1,183 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Five}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter Five: Standard Deviation and the Normal Distribution}
+
+
+We're all in a higher educational institution here, so chances are good that you have either taken the ACT and SAT. Suppose we wanted to compare ACT and SAT scores, but these scores are on different scales. How might we compare them? 
+
+
+Recall, that for nice-looking distributions we can use the average or mean as a measure of center and the standard deviation as the measure of spread. Using the mean and the standard deviation we can \underline{\hspace{7cm}} the scores to compare them. 
+
+\subsection*{Z-Scores}
+
+A \underline{\hspace{7cm}} is essentially a unitless measure of how extreme an observation is compared to its \underline{\hspace{7cm}}.
+
+Let:
+
+\begin{itemize}
+  \item y represent the quantitative variable of interest
+  \item $\bar{y}$ represent the mean of the variable of y. 
+  \item $\sigma$ represent the standard deviation of the quantitative variable y.
+\end{itemize}
+
+To calculate a z-score we use the following equation: \vskip 1in
+
+\textbf{Properties}
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  Distributions of Z have:
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+\newpage
+\textbf{Interpretation}
+
+z is the \underline{\hspace{10cm}} an observation is away from the mean.
+
+\begin{itemize}
+  \item ~\\\\
+  \item ~\\\\
+  \item ~\\\\\\
+\end{itemize}
+
+\begin{example}
+  Suppose the average score on the ACT English Section is 21 with a standard deviation of 4 and the average score of the SAT Verbal section is 520 with a standard deviation of 100. Suppose we want to compare two students, Ann scores a 27 on the ACT English exam, whereas Denise scores a 770 on the SAT Verbal exam. Who scores better on their standardized test? Denise or Ann?  \vskip 2in
+  
+\end{example}
+
+\begin{example}
+Suppose the average on the ACT Math exam is 21 points with a standard deviation of 4.1 points. Similarly, suppose the average on the SAT Math exam is 510 with a standard deviation of 100. let's compare two students, Jim who scored a 15 on the ACT Math section and Joe who scored a 340 on the SAT Math section. Who has the better score? \vskip 2in
+
+\end{example}
+\newpage
+
+What we are doing by calculating these z-scores is known as \underline{\hspace{6cm}} which allows us to compare observations between different quantitative variables. If we knew specifically the distributional information of the quantitative variables we are comparing, we could compare using percentiles. 
+
+\subsection*{The Normal Distribution}
+
+In statistics we use what's known as \underline{\hspace{7cm}} to represent processes/phenomenon in our world. We can then use these models to analyze the data we observe.
+
+Models are chosen based on their: 
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\ 
+\end{itemize}
+
+One of the most important models in statistics, and the only one you'll learn in this course is the \underline{\hspace{7cm}}. 
+
+\begin{itemize}
+  \item Shape
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+  \item Notation
+    \begin{itemize}
+      \item ~\\
+      \item ~\\
+      \item ~\\
+    \end{itemize}
+\end{itemize}
+\newpage
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width = 3in]{../images/bell-curve.png}
+\end{figure}
+
+Some implications of these characteristics:
+\begin{itemize}
+  \item ~\\\\
+  \item ~\\\\
+  \item ~\\\\
+\end{itemize}
+
+When we are talking about the Normal Distribution it's important to note that the $\mu$ and $\sigma$ \underline{\hspace{16.5cm}}.  They are considered parameters rather than summary statistics.
+
+Many times, data from the real world doesn't exactly follow the Normal model. So how can we tell if a dataset is distributed Normally?
+
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+
+\subsection*{68-95-99.7 Rule}
+
+The following holds for all Normal Distributions:
+
+\begin{itemize}
+  \item ~\\\\
+  \item ~\\\\
+  \item ~\\\\
+\end{itemize}
+
+We note that if $\mu = 0$ amd $\sigma = 1$, then \underline{\hspace{7cm}} are between -1 and 1. 
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = 3in]{../images/68-rule-visualization.png}
+  \end{figure}
+
+If $\mu = 0$ amd $\sigma = 1$, then \underline{\hspace{7cm}} are between -2 and 2.
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = 3in]{../images/95-rule-visualization.png}
+  \end{figure}
+
+
+if $\mu = 0$ amd $\sigma = 1$, then \underline{\hspace{7cm}} are between -3 and 3.
+
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = 3in]{../images/99-rule-visualization.png}
+  \end{figure}
+  
+\newpage
+
+\begin{example}
+  Recall that the heights of men are approximately distributed N(70,3). Using the 68-95-99.7 rule, answer the following questions.
+  \begin{enumerate}
+    \item[a)] The middle 68\% of men have heights between which two values? \vskip 1in
+    \item[b)] What percentage of men have heights greater than 73 inches? \vskip 1in
+    \item[c)] What percentage of men have heights between 64 and 73 inches?
+  \end{enumerate}
+\end{example}
+\end{document}

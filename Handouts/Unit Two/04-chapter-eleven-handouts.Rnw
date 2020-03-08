@@ -1,0 +1,196 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Ten}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter Eleven: Experiments}
+
+In chapter ten we talked about sampling methods and the sorts of biases that can be introduced to studies. In this chapter we will discuss the difference between observational studies and experiments as well as discuss the elements of experimental design. Let's look at an illustating example of experimental design.
+
+\textbf{Blood Pressure}
+
+Research Question: Can a new type of blood pressure medication, used in combination with a diet and exercise regiment reduce blood pressure for people with hypertension?
+
+The Study:
+\begin{itemize}
+  \item Researchers randomly chose 50 participants between the ages of 18 to 65 with a clinical diagnosis of hypertension. 
+  \item All 50 followed the same exercise schedule (walking for 1 hour a day).
+  \item All 50 followed the same diet program.
+  \item 25 people were given the new medicine
+  \item 25 people were given a sugar pill placebo
+  \item The study was carried out for 8 weeks 
+\end{itemize}
+
+Evaluation: At the end of eight weeks, each participant had their blood pressure drawn and a medical professional determined whether they showed significant improvement.
+
+Result: 
+\begin{itemize}
+  \item 18 out of the 25 people given the new medicine showed a substantial reduction in blood pressure
+  \item 7 out of the 25 people given the sugar pill showed a substantial reduction in blood pressure
+\end{itemize}
+
+Given these results, the researchers might naturally be curious as to how to compare these two groups and whether or not the difference between these two groups is actually meaningful. This situation necessitates hypothesis testing which we will cover in more depth later in this course.
+
+\subsection*{Observational Studies vs. Experiments}
+
+\textbf{Observational Study:} A study in which the researcher \underline{\hspace{6cm}} \underline{\hspace{5cm}}. So essentially, no factors are manipulated in this study and \underline{\hspace{7cm}}!
+
+\newpage
+
+There are two types of observational studies we will cover in this course:
+
+\begin{itemize}
+  \item Retrospective Study: ~\\\\\\
+  \item Prospective Study: ~\\\\\\
+\end{itemize}
+
+\textbf{Experiments:} A study in which the researcher \underline{\hspace{8cm}}. The data in this case is \underline{\hspace{7cm}} \ and if done properly \\
+\underline{\hspace{10cm}}.
+
+So given this information, is the blood pressure study an example of an:
+\begin{center}
+  Observational Study \quad \quad \quad \quad Experiment
+\end{center}
+
+\subsection*{Basics of Experimental Design}
+
+Experimental design refers to the science (or art form) of testing hypotheses. Now at the outset, you may think this is a relatively simple topic, however experimental design is actually an entire field of statistics that relies very heavily on advanced linear algebra and understanding of mathematical models! If you like experimental design, take more stats courses! 
+
+\textit{Experimental Units:}
+  \begin{itemize}
+    \item ~\\
+    \item \textit{Random Selection:} ~\\\\
+  \end{itemize}
+  
+\textit{Factors:}
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+
+\textit{Levels:}
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+  
+\textit{Treatment:} \vskip 1in
+
+So in the blood pressure example what are the:
+
+Experimental Units: \vskip 0.5in
+Factors: \vskip 0.5in
+Levels: \vskip 0.5in
+Treatments: \vskip 0.5in
+
+Note: if there is only one factor, the levels and the treatments are the same.
+
+\textit{Treatment Group:} \vskip 0.5in
+\textit{Control Treatment:} \vskip 0.5in
+\textit{Control Group:} \vskip 0.5in
+
+\newpage
+\textit{Response Variable:} ~\\
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+In our blood pressure example:
+
+Is there a control group? \vskip 0.5in
+What is the response variable, and what type of variable is it? \vskip 0.5in
+
+\subsection*{Four Principles of Experiments}
+
+There are four basic principles of experimental design that we will cover in this course:
+
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{itemize}
+
+\textbf{Control} 
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\\\
+\end{itemize}
+
+\textbf{Randomization}
+
+\begin{itemize}
+  \item \textit{Random Assignment:} ~\\\\\\
+  \item ~\\\\
+  \item ~\\\\
+\end{itemize}
+
+\textbf{Replication}
+  \begin{itemize}
+    \item ~\\\\
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+  
+\textbf{Blocking}
+
+If there is an identifiable variation or difference in the data between experimental units we use blocking to reduce these sources of variation.
+
+\begin{itemize}
+  \item ~\\\\\\
+  \item ~\\\\
+  \item ~\\\\
+\end{itemize}
+
+\begin{example}
+ For each of the four principles of experimental design, discuss whether or how the blood pressure study we discussed at the beginning of class embodies these principles. \vskip 2in
+
+\end{example}
+
+
+\subsection*{Other Topics in Experimental Design}
+
+\textbf{Placebo Effect:} \vskip 0.5in
+\textbf{Double-Blinding:} \vskip 1in
+\textbf{Confounding:} \vskip 1in
+\textbf{Repeatability:} \vskip 1in
+\end{document}
