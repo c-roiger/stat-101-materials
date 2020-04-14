@@ -1,0 +1,193 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Seventeen}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+
+\section*{Chapter Seventeen Part One: Hypothesis Testing for Proportions}
+
+
+\textbf{Motivation}
+
+\begin{itemize}
+  \item We have a claim about a population proportion
+  \item We want to test if the claim is true
+  \item Obtain data
+  \item Test the claim
+  \begin{itemize}
+    \item Make use of theory from sampling distributions
+    \item Use the normal distribution to calculate a p-value
+    \item Determine if there is evidence to support our claim based on our data (using the p-value)
+  \end{itemize}
+\end{itemize}
+
+\begin{example}
+The cracking rate of ingots used in manufacturing airplanes is 20\%. A new process is designed to lower the proportion of cracked ingots. In a random sample of 400 newly designed ingots, 16\% of them are cracked. Is this evidence that the new process actually lowered the proportion of cracked ingots?
+\end{example}
+\newpage
+
+\subsection*{Hypothesis Testing Procedure: SAMPLE}
+
+\begin{enumerate}
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+  \item ~\\
+\end{enumerate}
+
+
+\textbf{Step one: (S)tate your Null and Alternative Hypotheses}
+\begin{itemize}
+  \item Null Hypothesis $H_{o}$
+  \begin{itemize}
+    \item ~\\
+    \item ~\\\\
+  \end{itemize}
+  \item Alternative Hypothesis $H_{a}$
+    \begin{itemize}
+      \item ~\\\\
+      \item ~\\\\\\
+    \end{itemize}
+\end{itemize}
+
+So for example if I were to write up hypotheses for our ingots example: \vskip 2in
+
+\textbf{Step Two: Check (A)ssumptions}
+
+\begin{enumerate}
+  \item ~\\\\
+  \item ~\\\\
+  \item ~\\\\
+\end{enumerate}
+
+\textbf{Step Three: Determing the Sampling Distribution (M)odel}
+
+Recall: the \underline{\hspace{7cm}} for the sample proportion $\hat{p}$ describes the behaviour of the sample proportion in repeated samplings from the population. Under the assumption of the null hypothesis: \vskip 1in
+
+\textbf{Step Four: Calculate a Test Statistic}
+
+Definition: The \underline{\hspace{7cm}} is the value used to test whether or not the null hypothesis is true. \vskip 1in
+
+\textbf{Step Five: Find a (p)-value}
+
+Definition: The \underline{\hspace{7cm}} is the probability of getting a test statistic equal to or more extreme than the observed value IF THE NULL HYPOTHESIS IS TRUE. 
+
+\begin{itemize}
+  \item $H_{a}: p < p_{o}$ \newpage
+  \item $H_{a}: p > p_{o}$ \vskip 1.5in
+  \item $H_{a}: p \neq p_{o}$ \vskip 1.5in
+\end{itemize}
+
+\textbf{Step Six: (L)ist your Decision}
+
+Small p-value
+
+\begin{itemize}
+  \item ~\\\\
+  \item ~\\
+  \item ~\\\\
+\end{itemize}
+
+Large p-value
+
+\begin{itemize}
+  \item ~\\\\
+  \item ~\\
+  \item ~\\
+  \item ~\\\\
+\end{itemize}
+
+\newpage
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics{../images/p-val-evidence.png}
+\end{figure}
+
+\textbf{A word about p-values}
+
+Throughout Hypothesis testing, there has typically always been a decision step.
+This step included a hard cutoff, called a significance level or $\alpha$ level. The value for this level was traditionally $\alpha$ = .05. A hypothesis test would be done, and if your p-value was below this level, you would ''reject" the Null Hypothesis.
+
+In recent years, the American Statistical Association has come out against this
+type of decision making in favor of a strength of evidence approach. The idea is
+that we shouldn't restrict ourselves to these hard cutoffs as different problems
+may require more evidence than others. They want to get away from the idea that
+if your p-value is below some cutoff, then ''magically" your result is important.
+We should always stop and think about what our results mean. There has been a
+push in the Statistical education world to adopt a different approach going
+forward. Ultimately we are making some kind of decision (see the next slide), but
+trying to avoid these direct reject or don't reject type of statements.
+
+This new approach is probably different than you may have seen and what is still
+being used. We are trying this new idea for the first time to begin acclimating
+students to the approach that the Statistics world is trying to move towards.
+
+
+\textbf{Step Seven: Conclusion/(E)xplain}
+
+After making a decision based on our p-value and test statistic, we need to make a conclusion in a meaningful way. 
+
+Your conclusions should include:
+\begin{itemize}
+  \item ~\\
+  \item ~\\
+  \item ~\\\\
+\end{itemize}
+
+\begin{example}
+According to Consumer Reports, 60\% of all U.S. adults like creamy
+peanut butter. To investigate this claim, a recent survey polled 675
+randomly selected Americans and found that 374 liked creamy peanut
+butter. Is this evidence that the proportion of all U.S. adults who like
+creamy peanut butter is less than 60\%? (use $\alpha$ = 0.05). 
+\end{example}
+
+\textbf{State your Null and Alternative Hypotheses:} \vskip 2in
+
+\textbf{Check Assumptions} \vskip 2in
+\textbf{Determine the sampling Distribution} \vskip 2in
+
+\textbf{Calculate a test statistic} \newpage
+\textbf{Find a p-value} \vskip1in
+\textbf{List your Decision} \vskip 2in
+\textbf{State you Conclusion}
+
+
+\end{document}
