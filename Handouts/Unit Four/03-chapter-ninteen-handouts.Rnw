@@ -1,0 +1,162 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{\today}
+\chead{STAT 101 - Chapter Nineteen}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Chapter Nineteen: More about Tests and Intervals}
+
+
+\textbf{Recall:} The definition of a \underline{\hspace{7cm}} is the probability of getting the observed test statistic (whether it is z or t) or one that is more extreme if the null hypothesis ($H_{o}$) is true. 
+
+
+We note, that a p-values \underline{\hspace{5cm}} the probability that the null hypothesis is true. 
+
+
+\subsection*{Relationship between $H_{o}$ and $H_{a}$}
+
+To demonstrate the relationship between the null and the alternative hypothesis, we might compare a hypothesis test to a criminal trial. In the U.S judicial system, we assume that the defendant is innocent until proven otherwise. Therefore, we might say the null hypothesis in this case is:
+
+\begin{center}
+  $H_{o}$: the defendant is innocent
+\end{center}
+
+Therefore the prosecutor must convince the jury of the defendant's guilt by presenting evidence of a crime. We might say that this is the alternative hypothesis, it is the slaim that we are trying to find evidence to support.
+
+\begin{center}
+  $H_{a}$: the defendant is guilty
+\end{center}
+
+\begin{itemize}
+  \item If \textbf{enough evidence} is presented to suggest that the defendant is guilty ...
+    \begin{itemize}
+      \item ~\\ 
+      \item ~\\
+    \end{itemize}
+  
+  \item If \textbf{not enough evidence} is presented to suggest that the defendant is guilty ...
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+  
+  \end{itemize}
+
+But a question might arise, how much evidence is enough evidence.  
+
+\subsection*{Practical vs. Statistical Significance}
+
+A test is \underline{\hspace{7cm}} if ... \vskip 2in
+
+A test is \underline{\hspace{7cm}} if ... \vskip 2in
+
+For large samples, even small deviations from the null hypothesis could be statistically significant. But even if these differences are statistically significant, they may not be \\
+\underline{\hspace{7cm}}.
+
+
+For small samples, small but impactful differences may not end up being statistically significant. Hypothesis tests can only detect a very large difference between $H_{o}$ and the true value of the parameter. But in these cases, lack of sitatistically significant evidence does not mean that a signficant relationship does not exist. 
+
+\subsection*{Errors in Hypothesis Testing}
+
+Recall from Chapter 17 handouts part two that there are four different options for hypothesis tests:
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+  
+  But just like how courts can sometimes wrongfully convict an innocent person or let a guilty person walk free, we can make errors in our hypothesis testing. For this class we will focus on two different types of hypothesis errors.
+  
+  \subsection*{Type I and Type II Errors}
+  
+\begin{table}[ht!]
+\begin{tabular}{|l|cc|}
+\hline
+ & \multicolumn{1}{l}{\textbf{Evidence Against $H_{o}$}} & \multicolumn{1}{l}{\textbf{No Evidence Against $H_{o}$}} \\
+ \hline
+\textbf{$H_{o}$ is Actually True} & Type I Error & Correct \\
+\textbf{$H_{a}$ is Actually True} & Correct & Type II Error \\
+\hline
+\end{tabular}
+\end{table}
+
+
+TThe probabilities of Type I and Type II Errors are inversely related: 
+  \begin{itemize}
+    \item ~\\\\
+    \item ~\\\\
+  \end{itemize}
+  
+So ultimately the goal of hypothesis testing is to minimize both the probability of a Type I Error and the probability of a Type II Error. But because these two concepts are inversely related, these goals conflict. So often we choose to minimize our Type I error at the expense of our Type II error
+
+
+\subsection*{Hypothesis Tests \& Confidence Intervals for $\mu$}
+
+Consider a two-sided hypothesis test:
+\begin{center}
+  $H_{o}: \mu = \mu_{o}$ \quad $H_{a}: \mu \neq \mu_{o}$
+\end{center}
+
+This test has a direct relationship with a confidence interval for $\mu$:
+
+  \begin{itemize}
+    \item ~\\\\
+    \item ~\\\\
+  \end{itemize}
+  
+  
+  \begin{example}
+  
+  A study was done to determine the average commute time to work in Atlanta, Georgia. A random sample of 500 residents of metropolitan Atlanta was taken. The sample mean was $\bar{y} = 29.11$ minutes with a standard deviation of $s = 20.7$ minutes. A $90\%$ confidence interval is computed to be (27.58 minutes, 30.64 minutes). Consider the following hypotheses:
+  
+  \begin{center}
+  $H_{o}: \mu = 31$ minutes \quad $H_{a}: \mu \neq 31$ minutes  
+  \end{center}
+  
+  Based on the above confidence interval, what can we say about the strength of he evidence against the null hypothesis. \vskip 1in
+  \end{example}
+  
+  \textbf{Important Take-Aways}
+  
+  \begin{itemize}
+    \item ~\\
+    \item ~\\
+    \item ~\\
+  \end{itemize}
+
+\end{document}

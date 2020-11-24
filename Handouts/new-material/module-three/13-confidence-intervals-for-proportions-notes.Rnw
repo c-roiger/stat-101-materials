@@ -1,0 +1,292 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathrsfs,fancyhdr,syntonly,lastpage,hyperref,enumitem,graphicx, array, tabularx, multicol, wasysym}
+
+\usepackage[thmmarks,thref]{ntheorem}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}[section]
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}[section]
+
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremseparator{.}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{solution}{Solution}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         0pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+\pagestyle{fancyplain}
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\lhead{Today's Date:}
+\chead{STAT 101 - Module Three}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+
+\section*{Confidence Intervals for Proportions}
+
+Let's review a few terms that will aide us in our discussion of Confidence Intervals.
+
+\begin{itemize}
+  \item \textbf{Population:} ~\\\\
+  \item \textbf{Sample:} ~\\\\
+  \item \textbf{Information:} ~\\\\
+  \item \textbf{Parameter:} ~\\\\
+  \item \textbf{Statistic:} ~\\\\
+\end{itemize}
+
+
+Recall from past lectures that when we want to estimate the population proportion \underline{\hspace{2cm}} we often take a random representative sample and use \underline{\hspace{5cm}} to estimate $p$. However because of \underline{\hspace{5cm}} inherent in each sample we take, often times there is a degree of uncertainty in using $\hat{p}$ to estimate $p$. To capture this uncertainty in our estimates we can add a \textbf{margin of error} to our estimate of our parameter, which is the general form of what's known as a \underline{\hspace{5cm}}. 
+
+
+\subsubsection*{Review:}
+
+Recall from our discussion of sampling distributions for sample proportions that under the following conditions:
+\begin{enumerate}
+  \item[i.] Randomization Condition
+  \item[ii.] 10\% Condition
+  \item[iii.] Success/Failure Condition
+\end{enumerate}
+
+Then: 
+\newpage
+We could then standardize our observed values of $p$ using the Normal model and a z-table using the following formula: \vskip1in
+
+\subsubsection*{Introduction to Confidence Intervals}
+
+Using a z-table to find that in 95\% of all samples, the sample proportion $\hat{p}$ will be between the following two values: \vskip 1in
+
+We use 1.96 instead of 2 because it is more accurate since it is derived from the z-table. 
+
+\textbf{Result One:}
+In other words in 95\% of all samples, the \underline{\hspace{5cm}} $\hat{p}$ will be within 1.96 standard deviations of the \underline{\hspace{5cm}} $p$. We are trying to determine where the sample proportions are in relation to the population proportion, in mathematical language we say: \vskip 0.5in
+
+\textbf{Result Two:}
+An additional result that 95\% of all samples, the \underline{\hspace{5cm}} $p$ will be within 1.96 standard deviations of the \underline{\hspace{5cm}} of $\hat{p}$. Here we are trying to determine where the unknown population proportion is in relation to the sample proportions, in mathematical language: \vskip 0.5in
+
+The first result comes directly from work we did in this module about sampling distributions for sample proportions. The second result simply flips the first result around.i.e.:
+\begin{itemize}
+  \item ~\\\\
+  \item ~\\\\
+\end{itemize}
+
+But we have a problem with Result Two, the standard deviation includes the value of $p$ which is unknown. So our solution is to \underline{\hspace{8cm}} \newpage
+\textbf{Final Result}
+
+In approximately 95\% of all samples, the population proportion $p$ will be within 1.96 standard deviations of the sample proportion $\hat{p}$. In mathematical language we would say the following:
+\vskip 1in
+To illustrate this concept, let's look at an example.
+
+\begin{example}
+
+In a random sample of 1000 U.S. adults, 38.8\% of them state that they believe in the existence of ghosts. Find a 95\% confidence interval for the population proportion of all U.S. adults who believe in the existence of ghosts. 
+
+To answer this problem, we will complete the following steps:
+\begin{enumerate}
+  \item[i.] Identify important parts of the problem
+  \item[ii.] Check conditions for Normality
+  \item[iii.] Calculate the confidence interval
+  \item[iv.] Interpret the confidence interval
+\end{enumerate}
+
+Identify the following important pieces of the problem:
+\begin{itemize}
+  \item Population: ~\\
+  \item Sample: ~\\
+  \item Parameter: ~\\
+  \item Statistic: ~\\
+\end{itemize}
+
+Check the conditions for Normality:
+
+\begin{enumerate}
+  \item[i.] Random sample condition: ~\\\\
+  \item[ii.] Success/Failure condition: ~\\\\
+  \item[iii.] 10\% condition: ~\\\\
+\end{enumerate}
+
+
+Calculate the confidence interval
+
+\begin{center}
+$\hat{p} \pm 1.96\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}$
+\end{center}
+
+
+Interpretation:
+
+We are 95\% confident the proportion of all adults in the U.S. who believe in the existence of ghosts is between \underline{\hspace{5cm}} and \underline{\hspace{5cm}} percent. 
+\end{example}
+
+\textbf{In general}, to interpret a confidence interval at any confidence level, we use the following template for our interpretation:
+
+We are \underline{\hspace{2cm}} (confidence level) confident that the proportion of \underline{\hspace{4.5cm}} (population description) who/that \underline{\hspace{5cm}} (category or event of interest) is between \underline{\hspace{5cm}} and \underline{\hspace{5cm}} (lower and upper bounds of the confidence interval)
+
+
+It is important to note that the confidence level represents the percentage of all samples taken randomly from the population where the population proportion is contained within the bounds of the confidence interval. For a single sample, we can't say for sure whether the population parameter is within that particular confidence interval, but we can say we are 95\% confident. 
+
+Returning to our first example, if we were to take 100 samples of size 1000, and computed a 95\% confidence interval for each sample, we would expect approximately 95\% of these confidence intervals would contain the true proportion of U.S. adults that believe in ghosts.
+
+\newpage
+\subsubsection*{Other Confidence Levels}
+
+If the conditions for normality are met, then a confidence interval for a population proportion can be computed using the following formula: 
+
+\begin{center}
+  $\hat{p} \pm z^{*}\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}$
+\end{center}
+where the $z^{*}$ value is chosen based on the desired confidence level:
+
+\begin{table}[ht!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Confidence Level} & \textbf{80\%} & \textbf{90\%} & \textbf{95\%} & \textbf{98\%} & \textbf{99\%} \\ \hline
+$z^{*}$                   & 1.282         & 1.645         & 1.96          & 2.326         & 2.576         \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{example}
+344 out of a random sample of 1,010 U.S. adults rated the economy as good or excellent in a Gallup Poll from October 4-7, 2007. Find a 98\% confidence interval for the population proportion of all U.S. adults who believed the economy was good or excellent during this time frame. 
+
+Identify the following important pieces of the problem:
+
+\begin{itemize}
+\item Population: ~\\
+\item Sample: ~\\\\
+\item Parameter: ~\\
+\item Statistic: ~\\\\
+\end{itemize}
+
+
+Are the following Normality conditions met?
+
+\begin{enumerate}
+  \item[i.] Random Sample Condition: ~\\\\
+  \item[ii.] Success/Failure Condition: ~\\\\
+  \item[iii.] 10\% Condition: ~\\\\
+\end{enumerate}
+
+
+Calculate the confidence interval
+
+\begin{center}
+$\hat{p} \pm z^{*}\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}$
+\end{center}
+
+
+Interpretation:
+
+We are 98\% confident that the proportion of \underline{\hspace{8cm}} who \underline{\hspace{9cm}} is between \underline{\hspace{2cm}} and \underline{\hspace{2cm}}.
+
+\end{example}
+
+
+\subsection*{Properties of Confidence Intervals}
+
+Recall that the equation for a confidence interval for proportions is: 
+
+\begin{center}
+  $\hat{p} \pm z^{*}\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}$
+\end{center}
+
+The \underline{\hspace{5cm}} consists of two components: the standard error, and the critical value. The margin of error gives a rough estimate about the uncertainty of our estimates. 
+
+\begin{center}
+$z^{*}\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}$
+\end{center}
+
+\begin{table}[ht!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Confidence Level} & \textbf{80\%} & \textbf{90\%} & \textbf{95\%} & \textbf{98\%} & \textbf{99\%} \\ \hline
+$z^{*}$                   & 1.282         & 1.645         & 1.96          & 2.326         & 2.576         \\ \hline
+\end{tabular}
+\end{table}
+
+Based on the above formula we can essentially deduce the following: 
+
+\textbf{For a fixed sample size (n)} 
+\begin{center}
+$z^{*}\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}$
+\end{center}
+
+\begin{itemize}
+  \item Smaller confidence level $\implies$ smaller $z^{*}$ $\implies$ \underline{\hspace{4cm}}
+  \item Larger confidence level $\implies$ larger $z^{*}$ $\implies$ \underline{\hspace{4cm}}
+\end{itemize}
+
+Notice how a larger confidence level requires a larger or wider confidence interval! This is because in order to increase our confidence, we need to make "more room" for variation in our estimates.
+
+
+\textbf{For a fixed confidence level C\%}:
+
+Effect of sample size on margin of error (ME):
+\begin{center}
+$z^{*}\sqrt{\frac{\hat{p}*(1-\hat{p})}{n}}$
+\end{center}
+
+\begin{itemize}
+  \item Smaller samples $\implies$ smaller $n$ $\implies$ \underline{\hspace{4cm}}
+  \item Larger samples $\implies$ larger $n$ $\implies$ \underline{\hspace{4cm}}
+\end{itemize}
+
+So it would seem that larger samples give more precise estimate of the population proportion! 
+
+We really have two goals for confidence intervals, we want a high degree of confidence but a small margin of error. But this seems to be contradictory! So the best thing we can do is determine the sample size needed to obtain the desired confidence level and margin of error. 
+
+In our last example about the economy we found a 98\% confidence interval for the proportion of all U.S. adults who believed the economy was good or excellent during this time frame. Suppose we took a new sample that was doubled in sample size, but still wanted to find a 98\% confidence interval. So instead of 344 adults out of 1,010 adults rating the economy as good is now 688 out of 2,020. 
+
+Originally, our 98\% confidence interval was between (0.306, 0.376) but with our new sample size, we receive a confidence interval of the following:
+
+\begin{center}
+  $0.341 \pm 2.326\sqrt{\frac{0.341(1-0.341)}{2020}} = (0.316, 0.366)$
+\end{center}
+
+Notice how the width of the confidence interval decreases as our sample size increases! 
+
+\subsection*{Sample Size Calculation}
+
+Recall that the equation for the \underline{\hspace{4cm}} is as follows:
+
+\begin{center}
+  ME = $z^{*}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$
+\end{center}
+
+We note that the margin of error relies on the statistic $\hat{p}$ but because we haven't taken a sample yet we don't know what $\hat{p}$ is! In order to find a rough estimate of our sample size we assume that $\hat{p} = 0.5$. So let's solve for our sample size, $n$. 
+
+\begin{align*}
+ME &= z^{*} \sqrt{\frac{0.5^2}{n}} \\
+\frac{ME}{z^{*}} &= \sqrt{\frac{0.5^2}{n}}\\
+\big(\frac{ME}{z^{*}}\big)^2 &\geq\frac{0.5^2}{n} \\
+n\big(\frac{ME}{z^{*}}\big)^2 &\geq 0.5^2 \\
+n &\geq \big(\frac{0.5z^{*}}{ME} \big)^2
+\end{align*}
+
+\begin{example}
+We would like to obtain a 95\% confidence interval for the population proportion of U.S. registered voters who approve of President Obama's handling of the war in Afghanistan. We would like this confidence interval to have a margin of error or no more than 3\%. How many people should be in our sample? \vskip 2in
+\end{example}
+
+\textbf{Note:} That there is not a 1-1 relationship between sample size and margin of error. For example, if we wanted to cut our margin of error in half, we would need four times as many people in our sample.
+
+
+\begin{example} A sample of 500 pizza delivery orders from a local pizzeria found that 84\% of orders were paid for with a credit card (the rest were paid in cash). Find a 90\% confidence interval for the proportion of all pizza orders that were paid for with a credit card. The suppose we would like to obtain a 98\% confidence interval for the population proportion of pizza delvieries that were paid for with a credit card. We would like the confidence interval to have a margin of error of no more than 3\%, what should our sample size be? 
+
+\end{example}
+
+\end{document}
